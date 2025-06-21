@@ -1,3 +1,4 @@
+const base = import.meta.env.BASE_URL;
 export const myProjects = [
   {
     id: 1,
@@ -515,25 +516,25 @@ challenges: [
   }
 ];
 
-
-
 export const mySocials = [
   {
     name: "WhatsApp",
     href: "https://wa.me/6593553296",
-    icon: "/assets/socials/whatsApp.svg",
+    icon: `${base}assets/socials/whatsApp.svg`,  // no 'public/' in path
   },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/rui-min-toh-641a04303/",
-    icon: "/assets/socials/linkedIn.svg",
+    icon: `${base}assets/socials/linkedIn.svg`,  // no 'public/' in path
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/rui03lo/",
-    icon: "/assets/socials/instagram.svg",
+    icon: `${base}assets/socials/instagram.svg`,  // no 'public/' in path
   },
 ];
+
+
 
 export const experiences = [
   {

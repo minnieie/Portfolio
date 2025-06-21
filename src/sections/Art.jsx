@@ -43,7 +43,7 @@ const Art = () => {
         {artworks.map((filename, index) => (
           <div key={index} className="break-inside-avoid">
             <img
-              src={`assets/art/${filename}`}
+              src={`${import.meta.env.BASE_URL}assets/art/${filename}`}  // <-- IMPORTANT fix here!
               alt={`Art ${index + 1}`}
               className="w-full rounded-lg transition-transform duration-300 hover:scale-105"
             />
