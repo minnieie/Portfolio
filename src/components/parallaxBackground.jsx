@@ -8,13 +8,15 @@ const ParallaxBackground = () => {
   const mountain2Y = useTransform(x, [0, 0.5], ["0%", "30%"]);
   const mountain1Y = useTransform(x, [0, 0.5], ["0%", "0%"]);
 
+  const base = import.meta.env.BASE_URL;
+
   return (
     <div className="absolute top-0 left-0 w-screen h-full m-0 p-0">
       {/* Background Sky */}
       <div
         className="absolute inset-0 w-screen h-full m-0 p-0"
         style={{
-          backgroundImage: "url(/assets/sky.jpg)",
+          backgroundImage: `url(${base}assets/sky.jpg)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -25,7 +27,7 @@ const ParallaxBackground = () => {
       <motion.div
         className="absolute inset-0 w-screen h-full m-0 p-0"
         style={{
-          backgroundImage: "url(/assets/mountain-3.png)",
+          backgroundImage: `url(${base}assets/mountain-3.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -37,7 +39,7 @@ const ParallaxBackground = () => {
       <motion.div
         className="absolute inset-0 w-screen h-full m-0 p-0"
         style={{
-          backgroundImage: "url(/assets/planets.png)",
+          backgroundImage: `url(${base}assets/planets.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -49,7 +51,7 @@ const ParallaxBackground = () => {
       <motion.div
         className="absolute inset-0 w-screen h-full m-0 p-0"
         style={{
-          backgroundImage: "url(/assets/mountain-2.png)",
+          backgroundImage: `url(${base}assets/mountain-2.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
@@ -61,7 +63,7 @@ const ParallaxBackground = () => {
       <motion.div
         className="absolute inset-0 w-screen h-full m-0 p-0"
         style={{
-          backgroundImage: "url(/assets/mountain-1.png)",
+          backgroundImage: `url(${base}assets/mountain-1.png)`,
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

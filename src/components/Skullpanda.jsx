@@ -6,7 +6,7 @@ import { useFrame } from "@react-three/fiber";
 export function SkullPanda(props) {
   const group = useRef();
   const base = import.meta.env.BASE_URL;
-  const { scene } = useGLTF(`${base}models/skullpanda.glb`);
+  const { scene } = useGLTF(`${base}assets/skullpanda.glb`);  // updated path here
 
   const yPosition = useMotionValue(5);
   const ySpring = useSpring(yPosition, { damping: 30 });
@@ -35,4 +35,4 @@ export function SkullPanda(props) {
   );
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/skullpanda.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}assets/skullpanda.glb`);  // updated path here

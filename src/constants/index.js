@@ -520,19 +520,20 @@ export const mySocials = [
   {
     name: "WhatsApp",
     href: "https://wa.me/6593553296",
-    icon: `${base}assets/socials/whatsApp.svg`,  // no 'public/' in path
+    icon: `${import.meta.env.BASE_URL}assets/socials/whatsApp.svg`,
   },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/rui-min-toh-641a04303/",
-    icon: `${base}assets/socials/linkedIn.svg`,  // no 'public/' in path
+    icon: `${import.meta.env.BASE_URL}assets/socials/linkedIn.svg`,
   },
   {
     name: "Instagram",
     href: "https://www.instagram.com/rui03lo/",
-    icon: `${base}assets/socials/instagram.svg`,  // no 'public/' in path
+    icon: `${import.meta.env.BASE_URL}assets/socials/instagram.svg`,
   },
 ];
+
 
 
 
