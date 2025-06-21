@@ -15,9 +15,10 @@ const Footer = () => {
           </a>
         ))}
       </div>
-      <p>© 2025 Ali. All rights reserved.</p>
+      <p>© 2025 Toh Rui Min. All rights reserved.</p>
     </section>
   );
 };
 
 export default Footer;
+

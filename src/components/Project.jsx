@@ -8,9 +8,13 @@ const Project = ({
   href,
   image,
   tags,
+  media,
+  processSteps = [],
   setPreview,
+  challenges = [],
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+
   return (
     <>
       <div
@@ -43,7 +47,10 @@ const Project = ({
           image={image}
           tags={tags}
           href={href}
+          media={media}
+          processSteps={processSteps}
           closeModal={() => setIsHidden(false)}
+          challenges={challenges}
         />
       )}
     </>

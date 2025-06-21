@@ -1,328 +1,634 @@
 export const myProjects = [
   {
     id: 1,
-    title: "E-commerce Platform",
-    description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+    title: "Medieval Round Table Hall",
+    description: "A modular 3D environment built for real-time rendering, featuring an L-shaped corridor leading to a magical round table hall with floating crystal centerpiece.",
     subDescription: [
-      "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
-      "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
-      "Designed a responsive frontend with Tailwind CSS, enhancing user experience.",
-      "Added payment systems, localization, and product filtering for functionality improvements.",
+      "Created 4+ modular assets in Maya using shared texture atlas for optimized rendering",
+      "Developed hero floating crystal asset using high-low poly workflow with Substance Painter texturing",
+      "Implemented trim sheet texturing for efficient surface detail repetition",
+      "Configured dynamic lighting and post-processing (including emissive bloom) in Unity",
+      "Delivered playable third-person exploration build with camera controller"
     ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/accessories.jpg",
-    tags: [
+    processSteps: [
       {
-        id: 1,
-        name: "C#",
-        path: "/assets/logos/csharp.svg",
+        title: "Concept Development",
+        description: "Created initial sketches and mood boards to establish the medieval fantasy aesthetic and layout of the hall.",
+        image:  "/assets/process/3RT_ASG1_pureref.png"
       },
       {
-        id: 2,
-        name: ".Net",
-        path: "/assets/logos/dotnet.svg",
+        title: "Modular Asset Creation",
+        description: "Built 4+ modular assets in Maya using shared texture atlas for optimized rendering and seamless environment construction.",
+        image: "/assets/process/modular-assets.png" 
       },
       {
-        id: 3,
-        name: "Ef Core",
-        path: "/assets/logos/efcore.png",
+        title: "WhiteBoxing & Layout",
+        description: "Created a block-out version of the environment using simple geometry to establish scale and layout.",
+        image: "/assets/process/whitebox.png"
       },
       {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        title: "Hero Asset Development",
+        description: "Created the floating crystal centerpiece using high-low poly workflow with detailed Substance Painter texturing.",
+        image: "/assets/process/3RT_ASG1_crystal.png"
       },
+      {
+        title: "Unity Integration",
+        description: "Integrated the floating crystal centerpiece into the Unity environment, ensuring proper scale and interaction.",
+        image: "/assets/process/3RT_ASG1_integration.png"
+      },
+      {
+        title: "Lighting & Effects",
+        description: "Configured dynamic lighting and post-processing effects in Unity, including emissive bloom for the crystal. I also integrated BGM and VFX of fire for an immersive experience.",
+        image: "/assets/process/3RT_ASG1_lighting.png"
+      },
+      {
+        title: "Final Product",
+        image: "/assets/process/3RT_ASG1_final.png"
+      },
+    ],
+    challenges: [
+    {
+      problem: "Managing texture optimization while maintaining visual quality for modular assets.",
+      solution: "Used a shared texture atlas and trim sheets to optimize memory usage without compromising aesthetics."
+    },
+    {
+      problem: "Learning to add BGM and VFX of fire in Unity using spritesheets on my own was difficult.",
+      solution: "Utilized online tutorials to implement audio and visual effects, enhancing the overall atmosphere."
+    },
+
+  ],
+  href: null,
+  media: {
+    video: "https://youtu.be/hugOmLFzsw8?si=v0Qh06QOILxML8KY",
+    build: "/downloads/medieval-hall-build.zip"
+  },
+  image: "/assets/projects/medieval-hall.jpg",
+  tags: [
+      { id: 1, name: "Unity", path: "/assets/logos/unity.svg" },
+      { id: 2, name: "Maya", path: "/assets/logos/maya.svg" },
+      { id: 3, name: "Substance Painter", path: "/assets/logos/substance-painter.svg" },
     ],
   },
-  {
+ {
     id: 2,
-    title: "Authentication & Authorization System",
-    description:
-      "A secure authentication and authorization system using Auth0 for seamless user management.",
+    title: "Money Heist",
+    description: "A first-person stealth game with time pressure mechanics, featuring security systems, NPC interactions, and 40+ collectibles across interconnected indoor/outdoor environments.",
     subDescription: [
-      "Integrated Auth0 for authentication, supporting OAuth, JWT, and multi-factor authentication.",
-      "Implemented role-based access control (RBAC) for fine-grained user permissions.",
-      "Developed a React-based frontend with Tailwind CSS for a sleek user experience.",
-      "Connected to a secure SQLite database for user data storage.",
+      "Implemented core gameplay systems: door interactions (E key), dynamic NPC spawns, laser hazards, and CCTV detection",
+      "Developed UI systems: real-time score counter (155+ points possible), collectible tracker (40 items), and 3-minute mission timer",
+      "Created day-night cycle with rotating directional light for atmospheric immersion",
+      "Programmed security systems: auto-closing doors, keycard access, and laser traps",
+      "Integrated audio systems: BGM, SFX for interactions (collectibles score +1, hazards -1 health)"
     ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/auth-system.jpg",
+    media: {
+      video: "https://youtu.be/1zsLKv9l6HA?si=NrKzOPAkt1NIezcm",
+      repository: "https://github.com/minnieie/MoneyHeist.git"
+    },
+    image: "/assets/projects/money-heist.jpg",
+    processSteps: [
+      {
+        title: "Switching Cameras between Main camera and Player camera",
+        description: "Implemented smooth transitions between the main camera and the player camera to show mission panel and player view.",
+        image:  "/assets/process/I3E_ASG1_Panel.png"
+      },
+      {
+        title: "Importing Assets",
+        description: "Utilized the Unity Asset Store and Sketchfab to find and import high-quality assets and made the items functionable to steal the items using raycast.",
+        image: "/assets/process/I3E_ASG1_Assets.png"
+      },
+      {
+        title: "Implement CCTV cameras that could move, detect the player and decrease their health upon collision.",
+        description: "Utilized the Unity Asset Store and Sketchfab to find and import high-quality assets and made the items functionable to steal the items using raycast.",
+        image: "/assets/process/I3E_ASG1_CCTV.png"
+      },
+      {
+        title: "NPCs",
+        description: "Implemented NPCs that wander around the map using navmesh and able to drop items.",
+        image: "/assets/process/I3E_ASG1_NPC.png"
+      },
+      {
+        title: "Locked Doors",
+        description: "Implemented locked doors that require keycards to access, adding an extra layer of challenge.",
+        image: "/assets/process/I3E_ASG1_LockedDoor.png"
+      },
+      {
+        title: "SFX and UI",
+        description: "Implemented sound effects and user interface elements to enhance gameplay experience.",
+        image: "/assets/process/I3E_ASG1_SFX.png"
+      },
+      {
+        title: "You Win!",
+        description: "Upon player collecting all collectibles, a congratulatory message is displayed.",
+        image: "/assets/process/I3E_ASG1_Congrats.png"
+      },
+    ],
+    challenges: [
+    {
+      problem: "When Player dies, the collectibles should reset to their original positions.",
+      solution: "Instead of destroying the collectibles, I enable back their visibility and reset their positions to the original spawn points.",
+    },
+    {
+      problem: "Collectible count was not updating correctly when the player collected items or respawned.",
+      solution: "Hardcoded the maximum collectible count (e.g. 40) to prevent dynamic NPC drops from affecting the total. Used condition checks and state reset logic to ensure the count displays accurately after player respawn."
+    },
+    {
+      problem: "Background music (BGM) did not reset correctly after the player died and restarted the game.",
+      solution: "Implemented audio state management to stop the death BGM and restart the main theme when the player clicks restart. Ensured BGM transitions are handled consistently through scene reload or reset triggers through a UIManager script."
+    },
+    {
+      problem: "Raycasting would sometimes detect multiple collectibles at once due to them being placed too closely together.",
+      solution: "Adjusted the BoxCollider sizes on collectibles to better match visual bounds and reduce overlap. Aligned the raycast with the camera’s forward direction and ensured it dynamically follows the player's view to detect only the nearest collectible accurately."
+    },
+    {
+      problem: "Struggled with connecting button events to my custom scripts in Unity using the OnClick inspector. It was confusing to figure out how to link methods even though the script was already attached.",
+      solution: "Learned how to expose public methods and link them properly through Unity's Inspector by dragging the GameObject with the script into the OnClick slot and selecting the right method from the dropdown."
+    }
+
+  ],
+
     tags: [
       {
         id: 1,
-        name: "Auth0",
-        path: "/assets/logos/auth0.svg",
+        name: "Unity",
+        path: "/assets/logos/unity.svg"
       },
       {
         id: 2,
-        name: "React",
-        path: "/assets/logos/react.svg",
+        name: "C#",
+        path: "/assets/logos/csharp.svg"
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "GitHub",
+        path: "/assets/logos/github.svg"
       },
     ],
+    technicalDetails: {
+      engine: "Unity 6+",
+      systems: [
+        "Physics-based interactions",
+        "Raycast detection",
+        "Prefab instantiation",
+        "Scriptable Objects"
+      ],
+      achievements: [
+        "Implemented all Merit-grade requirements",
+        "Dynamic NPC behavior",
+        "Complex door state machine",
+        "Modular collectible system"
+      ]
+    }
   },
   {
     id: 3,
-    title: "Blazor Web App",
+    title: "BLACKPINK Revamped Website",
     description:
-      "A modern, interactive web application built with Blazor WebAssembly and .NET Core.",
+      "A responsive, visually immersive front-end website showcasing BLACKPINK through engaging micro-interactions and scroll-based animations.",
     subDescription: [
-      "Developed a fully interactive Single Page Application (SPA) using Blazor WebAssembly.",
-      "Implemented API interactions using .NET Core for a robust backend.",
-      "Designed responsive UI components with Tailwind CSS for an enhanced UX.",
-      "Integrated SQLite for efficient client-side database storage.",
+      "Designed and built a fully responsive Single Page Application using HTML, CSS, and JavaScript.",
+      "Implemented scroll-triggered parallax effects and mouseover animations to elevate user engagement.",
+      "Ensured cross-browser and mobile compatibility for a smooth user experience across all devices.",
+      "Deployed the project to GitHub Pages with proper file structure and version control using Git.",
     ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/blazor-app.jpg",
+    media: {
+      video: "https://youtu.be/NPNUpSrweV4?si=k3XiSor4eRMGnz8y",
+      repository: "https://github.com/minnieie/BLACKPINK.git"
+    },
+    image: "/assets/projects/BLACKPINK.png", // You can swap this with your actual image path
+    processSteps: [
+    {
+      title: "Building a Responsive Navigation Bar",
+      description: "Created a hamburger-style mobile menu with JavaScript to toggle visibility and ensure the navigation bar adapts across screen sizes.",
+      image: "/assets/process/ID_ASG1_Nav.png"
+    },
+    {
+      title: "Implementing the Mini Store",
+      description: "Developed a functional store page where users could add and remove items from the cart. Ensured quantity updates, total price calculation, and checkout validation were working correctly.",
+      image: "/assets/process/ID_ASG1_Store.png"
+    },
+    {
+      title: "Embedding Fullscreen YouTube Video",
+      description: "Used the YouTube Iframe API on the About page to autoplay, loop, and allow pause/play interactions. Ensured the video was full-width and responsive.",
+      image: "/assets/process/ID_ASG1_video.png"
+    },
+    {
+      title: "Final Testing & Deployment",
+      description: "Tested across different browsers and screen sizes for compatibility. Deployed the final version using GitHub Pages with a clean project structure.",
+      image: "/assets/projects/BLACKPINK.png"
+    }
+  ],
+
+    challenges: [
+    {
+      problem: "Creating a functional mini store was tricky — especially validating item quantities, ensuring price totals matched, and syncing everything correctly on checkout.",
+      solution: "Implemented dynamic form validation and real-time cart updates using JavaScript. Carefully handled edge cases like incorrect quantities and missing data to ensure consistent price calculations and a smooth checkout process.",
+    },
+    {
+      problem: "I wanted to embed a fullscreen YouTube video on the About page that auto-plays, loops, and lets users pause or resume playback — but getting all those features working smoothly together was challenging.",
+      solution: "Used the YouTube Iframe API to create a custom embedded video player. Enabled autoplay and looping using `playerVars`, and made sure users could control playback (pause/play) while maintaining responsiveness and full-width scaling."
+    },
+  ],
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
       },
       {
         id: 2,
-        name: ".NET Core",
-        path: "/assets/logos/dotnetcore.svg",
+        name: "CSS",
+        path: "/assets/logos/css.svg",
       },
       {
         id: 3,
-        name: "SQLite",
-        path: "/assets/logos/sqlite.svg",
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
       },
       {
         id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "GitHub",
+        path: "/assets/logos/github.svg",
       },
     ],
   },
+
   {
     id: 4,
-    title: "C++ Game Engine",
+    title: "Dream House",
     description:
-      "A lightweight C++ game engine designed for 2D and 3D game development.",
+      "An immersive 3D environment built in Unity simulating a my Dream House, designed as part of a spatial theory and level design assignment.",
     subDescription: [
-      "Built a powerful rendering engine using OpenGL and C++.",
-      "Developed a physics engine with collision detection and particle effects.",
-      "Implemented a scripting system for easy game customization.",
-      "Optimized performance with multi-threading and efficient memory management.",
+      "Conceptualized floorplans for a realistic multi-room house with cohesive spatial layout.",
+      "Modeled architectural structure, furniture, and fittings using Unity’s ProBuilder and Polybrush tools.",
+      "Created realistic terrain and landscaping with Unity’s Terrain engine, integrating natural elements like foliage, roads, and decorative features.",
+      "Designed ambient lighting to evoke a warm, welcoming mood and enhance the overall environment experience using Global Illumination.",
+      "Produced a walkthrough video to showcase the environment and provide an engaging virtual tour of the space."
     ],
-    href: "",
-    logo: "",
-    image: "/assets/projects/game-engine.jpg",
+    media: {
+      video: "https://youtu.be/HxFdH1vYxhk?si=qCKE4ma0GxqW4blr",
+    },
+    image: "/assets/projects/DreamHouse.jpg",
+    processSteps: [
+    {
+      title: "Using ProBuilder for Architectural Modeling",
+      description: "Being my first Unity project, it was hard to utilize ProBuilder to create detailed architectural models, including walls, windows, and doors, ensuring accurate spatial representation.",
+      image: "/assets/process/STLD_ASG1_Floorplan.png"
+    },
+    {
+      title: "Adding Unity Assets for Furniture and Decor",
+      description: "Incorporated various 3D models and textures for furniture and decor elements using Unity’s Asset Store, enhancing the overall realism of the environment. I also created added terrain and a pool.",
+      image: "/assets/process/STLD_ASG1_Assets.png"
+    },
+    {
+      title: "Global Illumination for Realistic Lighting",
+      description: "Utilized Unity's Global Illumination to create realistic lighting effects, enhancing the mood and atmosphere of the environment.",
+      image: "/assets/process/STLD_ASG1_Lighting.png"
+    }
+  ],
+    challenges: [
+    {
+      problem: "Global Illumination was difficult to set up correctly, especially for achieving realistic lighting effects in the house.",
+      solution: "Utilized Unity's lighting settings and experimented with different configurations to achieve the desired ambiance. Leveraged baked lighting for static objects and real-time lighting for dynamic elements."
+    },
+  ],
     tags: [
       {
         id: 1,
-        name: "C++",
-        path: "/assets/logos/cplusplus.svg",
+        name: "Unity",
+        path: "/assets/logos/unity.svg",
       },
       {
         id: 2,
         name: "C#",
         path: "/assets/logos/csharp.svg",
-      },
-      {
-        id: 3,
-        name: "Git",
-        path: "/assets/logos/git.svg",
-      },
-      {
-        id: 4,
-        name: "Microsoft",
-        path: "/assets/logos/microsoft.svg",
       },
     ],
   },
   {
     id: 5,
-    title: "WordPress Custom Theme",
+    title: "3D Chess Piece",
     description:
-      "A fully customizable WordPress theme optimized for performance and SEO.",
+      "A reconstructed South German Staunton chess set modeled in Maya, textured with wear-and-tear aesthetics for real-time rendering.",
     subDescription: [
-      "Developed a responsive WordPress theme using HTML5, CSS3, and JavaScript.",
-      "Integrated Tailwind CSS for modern styling and UI enhancements.",
-      "Optimized SEO and page speed using Vite.js for fast builds.",
-      "Implemented custom widgets and plugin compatibility for extended functionality.",
+      "Modeled six individual chess pieces (Pawn, Rook, Knight, Bishop, Queen, King) based on photographic reference to preserve authentic silhouette and proportions.",
+      "UV unwrapped each piece with distortion checks and multi-quadrant layouts, including complex UV mapping for high-poly Knight model.",
+      "Applied textures with artistic freedom while retaining reference color schemes, incorporating aging effects to enhance realism.",
+      "Presented assets in a clean, optimized turntable setup using Unity3D and After Effects, with transitions from textured to wireframe views.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/wordpress-theme.jpg",
+    image: "/assets/projects/3DF_Chesspiece.png",
+    media: {
+      video: "/assets/projects/3DF_knight.mp4",
+    },
+    processSteps: [
+    {
+      title: "Using Maya for 3D Modeling",
+      description: "Being my first 3D modeling project, it was challenging to create detailed models of chess pieces using Maya, this was my first 3 chess piece model.",
+      image: "/assets/process/3DF_ASG1_3chess.png"
+    },
+    {
+      title: "Turntable for Knight Piece",
+      description: "Created a turntable animation for the knight piece in After Effects to showcase its design from all angles.",
+      image: "/assets/process/3DF_ASG1_knight.png"
+    },
+    {
+      title: "UV Unwrapping & Check",
+      description: "Unwrapped the chess piece UVs and applied a checker texture to identify stretching or distortion. Adjusted the UV islands to ensure they appeared evenly scaled and neutral (white), indicating a clean, undistorted layout suitable for texturing.",
+      image: "/assets/process/3DF_ASG1_UV_White.png"
+    }
+  ],
+challenges: [
+  {
+    problem: "Grasping Maya's complex interface and 3D modeling tools was initially overwhelming, especially when trying to replicate intricate chess piece details with accuracy.",
+    solution: "Overcame this by breaking down each piece into simpler geometric forms and using photo references as visual anchors. Gradually built confidence by practicing with modeling tools like extrusion, beveling, and subdivision surfaces."
+  },
+  {
+    problem: "UV unwrapping posed difficulties, particularly in maintaining clean, distortion-free UV maps across multiple chess pieces, especially the Knight.",
+    solution: "Learned to identify and minimize stretching through distortion check modes and organized UV shells across multiple quadrants. Focused on proper seam placement and layout optimization for efficient texturing."
+  },
+  {
+    problem: "Setting up effective lighting for the turntable presentation was challenging without washing out the textures or creating harsh shadows.",
+    solution: "Experimented with three-point lighting and real-time engine settings in Unity3D, balancing highlight and ambient illumination to showcase texture detail while retaining silhouette clarity."
+  },
+],
+
     tags: [
       {
         id: 1,
-        name: "WordPress",
-        path: "/assets/logos/wordpress.svg",
+        name: "Maya",
+        path: "/assets/logos/maya.svg",
       },
       {
         id: 2,
-        name: "HTML5",
-        path: "/assets/logos/html5.svg",
-      },
-      {
-        id: 3,
-        name: "CSS3",
-        path: "/assets/logos/css3.svg",
-      },
-      {
-        id: 4,
-        name: "Vite.js",
-        path: "/assets/logos/vitejs.svg",
+        name: "After Effects",
+        path: "/assets/logos/AfterEffects.svg",
       },
     ],
   },
   {
     id: 6,
-    title: "Online Learning Platform",
+    title: "PlayPals",
     description:
-      "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
+      "A social gaming platform designed to foster real friendships through shared gaming interests, personalized matchmaking, and community interaction.",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      "Designed end-to-end mobile and smartwatch prototypes using Figma for seamless social UX across devices.",
+      "Conducted user research and created personas, empathy maps, and journey flows to inform inclusive, low-pressure matchmaking experiences.",
+      "Built high-fidelity UI mockups focused on personalization, communication flexibility, and mental well-being.",
+      "Explored competitive analysis of Discord, Reddit, and Facebook to identify design gaps and improve community bonding.",
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/elearning.jpg",
+    image: "/assets/projects/DUX_ASG1.png",
+    media: {
+      youtube: "https://youtu.be/NYo75-VmRtM",
+      figma: "https://www.figma.com/proto/rdSDIdkdHu0I66UwZHq2Dn/DUX_Assg1_P01_TohRuiMin?node-id=32-208&p=f&t=LviDjniY4Lp84IEl-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=25%3A63&show-proto-sidebar=1"
+    },
+    processSteps: [
+      {
+        title: "User Research & Persona Development",
+        description: "Kicked off the project with interviews and empathy mapping to define the emotional needs and social habits of casual gamers. Synthesized insights into clear user personas and journey maps to guide design decisions.",
+        image: "/assets/process/DUX_ASG1_EmpathyMap.png"
+      },
+      {
+        title: "User Journey Mapping & Competitive Analysis",
+        description: "Analyzed user journeys and conducted competitive analysis to identify design gaps and opportunities for enhancing the user experience.",
+        image: "/assets/process/DUX_ASG1_UserJourney.png"
+      },
+      {
+        title: "User Interaction Flow",
+        description: "Mapped out the core flows for both mobile and smartwatch experiences, focusing on smooth transitions across login, matchmaking, voice chat, and community browsing. This helped validate design choices and ensured each interaction aligned with the app’s low-pressure social vibe.",
+        image: "/assets/process/DUX_ASG1_Interaction.png"
+      },  
+
+      {
+        title: "A Day In The Life Storyboard",
+        description: "Mapped out a typical user’s day to identify key interactions and emotional touchpoints, ensuring the design addressed real-world use cases.",
+        image: "/assets/process/DUX_ASG1_Storyboard.png"
+      },
+      {
+        title: "Wireframing & Low-Fidelity Prototypes",
+        description: "Sketched mobile and smartwatch interface flows that mapped out key interactions—from matchmaking to voice calls. Prioritized accessibility and emotional comfort for users who may be new to social gaming spaces.",
+        image: "/assets/process/DUX_ASG1_Wireframe.png"
+      },
+    ],
+    challenges: [
+      {
+        problem: "Striking the right tone for both casual and introverted gamers without making features feel overwhelming.",
+        solution: "Balanced design elements like soft UI prompts, opt-in voice features, and customizable profiles to cater to varying comfort levels."
+      },
+      {
+        problem: "Designing for multiple platforms (mobile and smartwatch) while keeping the experience seamless and purpose-driven.",
+        solution: "Created simplified versions of core features for the smartwatch and prioritized features best suited for on-the-go interactions."
+      }
+    ],
+
     tags: [
       {
         id: 1,
-        name: "Blazor",
-        path: "/assets/logos/blazor.svg",
-      },
-      {
-        id: 2,
-        name: "Azure",
-        path: "/assets/logos/azure.svg",
-      },
-      {
-        id: 3,
-        name: "Stripe",
-        path: "/assets/logos/stripe.svg",
-      },
-      {
-        id: 4,
-        name: "TailwindCSS",
-        path: "/assets/logos/tailwindcss.svg",
+        name: "Figma",
+        path: "/assets/logos/figma.svg",
       },
     ],
   },
+  ];
+
+export const myIntegratedProjects = [
+  {
+    id: 1,
+    title: "Miao Miao",
+    description: "An immersive, gamified e-commerce experience crafted for figurine enthusiasts. Miao Miao blends stunning 3D previews, a dynamic rewards system, and personalized features into a platform that feels more like a collectible playground than a shopping site. Designed with a sleek UI and an emphasis on community, it bridges commerce with collector culture.",
+    subDescription: [
+      "Modules: 3D Fundamentals, Applied Design, Interactive Development, Gamification Concepts, Production Management"
+    ],
+    image: "/assets/IP/1.2.png",
+    href: "",
+    tags: [
+      { id: 1, name: "Firebase", path: "/assets/logos/firebase.svg" },
+      {
+        id: 2,
+        name: "Jira",
+        path: "/assets/logos/jira-5.png",
+      },
+      { id: 3, name: "Figma", path: "/assets/logos/figma.svg" },
+      { id: 4, name: "Maya", path: "/assets/logos/maya.svg" },
+      { id: 5, name: "Substance Painter", path: "/assets/logos/substance-painter.svg" },
+      {
+        id: 6,
+        name: "HTML",
+        path: "/assets/logos/html5.svg",
+      },
+      {
+        id: 7,
+        name: "CSS",
+        path: "/assets/logos/css.svg",
+      },
+      {
+        id: 8,
+        name: "JavaScript",
+        path: "/assets/logos/javascript.svg",
+      },
+    ],
+    media: {
+      youtube: "https://youtu.be/MmTF9HlZcJc?si=HA8hhY49zUJDdmXT",
+      repository: "https://github.com/minnieie/MiaoMiao"
+    },
+processSteps: [
+  {
+    title: "Research & Project Vision",
+    description: "Began by identifying target user demographics, specifically figurine collectors, and explored trends in gamified e-commerce and niche communities. Set the design vision around playful interaction, personalization, and community engagement inspired by collector culture.",
+    image: "/assets/process/IP_1.2_GC.png"
+  },
+  {
+    title: "Firebase Architecture & Backend Dev",
+    description: "Built and structured the backend using Firebase for authentication, user profiles, point tracking, and wishlist logic. Developed JSON schemas to enable dynamic data display across product listings and checkout flows.",
+    image: "/assets/process/IP_1.2_Firebase.png"
+  },
+  {
+    title: "3D Asset Integration",
+    description: "Made a Hello Kitty and SkullPanda 3D model in Maya and Substance Painter, then integrated them into the Sketchfab.",
+    image: "/assets/process/IP_1.2_3D.png"
+  },
+  {
+    title: "Wireframing to High-Fidelity Prototypes",
+    description: "Contributed on low-fidelity wireframes that mapped out the shopping journey—from browsing to post-purchase engagement. Refined the UI with soft colors, bold CTAs, and intuitive gestures suited for both desktop and mobile devices.",
+    image: "/assets/process/IP_1.2_Wireframe.png"
+  },
+  {
+    title: "Sprint Management & Iteration",
+    description: "Used Jira and SCRUM methodologies to manage agile sprints. Broke down backlog items, tracked velocity, and ran retrospectives to improve handoff efficiency between design, development, and QA.",
+    image: "/assets/process/IP_1.2_Sprints.png"
+  }
+],
+challenges: [
+
+  {
+    problem: "Designing gamification that genuinely benefits collector engagement instead of being gimmicky.",
+    solution: "Introduced meaningful reward systems (e.g. login streaks, collector badges, discount tiers) that tie directly to user behavior and collection habits."
+  },
+  {
+    problem: "Unifying multiple modules (AD, GC, PMT, ID, 3DF) into a cohesive brand story.",
+    solution: "Connected the dots across design rationale, backend logic, and 3D design through a unified brand tone—centered on a welcoming, collector-first ethos exemplified by the cat-faced Miao Miao mascot."
+  }
+]
+
+  }
 ];
+
+
 
 export const mySocials = [
   {
     name: "WhatsApp",
-    href: "",
+    href: "https://wa.me/6593553296",
     icon: "/assets/socials/whatsApp.svg",
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
+    href: "https://www.linkedin.com/in/rui-min-toh-641a04303/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
     name: "Instagram",
-    href: "https://www.instagram.com/ali.sanatidev/reels/",
+    href: "https://www.instagram.com/rui03lo/",
     icon: "/assets/socials/instagram.svg",
   },
 ];
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Vice President",
+    job: "Nullsec",
+    date: "Oct 2024 – May 2025",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Promoted from Publicity Intern to Vice President after leading impactful campaigns via Instagram Stories, event posters, and workshop presentations.",
+      "Oversaw Design Team and Security Operations, ensuring smooth event execution, operational workflows, and alignment with the CCA’s cybersecurity goals.",
+      "Guided the team through a record-breaking year in 2025, achieving the highest membership signups in Nullsec’s history.",
+      "Played a key role in organizing workshops and panel events, strengthening facilitation and public speaking experience while promoting cyber-awareness across campus."
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Ambassador",
+    job: "Ngee Ann Ambassadors",
+    date: "May 2024 – Nov 2024",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
-    ],
+      "Represented Ngee Ann Polytechnic at flagship events such as RED Camp and Youth Leaders Camp, serving as a welcoming face and student guide for prospective students.",
+      "Visited secondary schools to promote NP courses and share personal experiences, connecting with students through engaging talks and interactive sessions.",
+      "Equipped with in-depth knowledge of NP courses, campus life, and CCA opportunities to engage and inspire visitors during outreach tours and campus showcases.",
+      "Contributed to RED Camp 2024's social media team, produced a video for the Centurions Tribe Showcase.",
+      "Strengthened public speaking, teamwork, and interpersonal skills through live hosting, collaborative planning, and engaging group facilitation."
+    ]
+  },
+
+
+  {
+    title: "President",
+    job: "Chinese Orchestra Marsiling Secondary School",
+    date: "2023–2024",
+    contents: [
+      "Led the orchestra from a Certificate of Accomplishment (2021) to attaining Distinction in 2023, marking a major milestone in its history.",
+      "Fostered a motivated and inclusive culture by encouraging members to balance discipline with joy in their musical journey.",
+      "Took initiative to improve personal musicianship by attending Marsiling Chinese Orchestra rehearsals weekly, refining erhu technique and expanding musical interpretation.",
+      "Organized sectional practices, bonding activities, and performance prep to ensure both musical excellence and member well-being.",
+      "Acted as a bridge between student musicians and instructors, aligning artistic vision with team morale and logistical needs."
+    ]
+  }
+
+];
+export const skills = [
+  {
+    name: "Visual Studio Code",
+    username: "@vscode",
+    body: "Efficient code editing and debugging environment I use daily.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "2025-Present",
-    contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
-    ],
+    name: "C#",
+    username: "@csharp",
+    body: "Strong experience in building game logic and apps using C#.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+  },
+  {
+    name: "HTML5",
+    username: "@html5",
+    body: "Proficient in semantic markup and responsive web structures.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  },
+  {
+    name: "CSS3",
+    username: "@css3",
+    body: "Skilled in styling, animations, and layout techniques.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  },
+  {
+    name: "JavaScript",
+    username: "@javascript",
+    body: "Experienced in interactive front-end features and logic.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "Unity",
+    username: "@unity",
+    body: "Game development platform for immersive 3D and 2D experiences.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
+  },
+  {
+    name: "Adobe Photoshop",
+    username: "@photoshop",
+    body: "Photo editing and digital art creation for design assets.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+  },
+  {
+    name: "Canva",
+    username: "@canva",
+    body: "Quick and versatile graphic design for marketing materials.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg",
+  },
+  {
+    name: "Figma",
+    username: "@figma",
+    body: "UI/UX design and prototyping for seamless user experiences.",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   },
 ];
-export const reviews = [
-  {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://robohash.org/jack",
-  },
-  {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://robohash.org/jill",
-  },
-  {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://robohash.org/john",
-  },
-  {
-    name: "Alice",
-    username: "@alice",
-    body: "This is hands down the best thing I've experienced. Highly recommend!",
-    img: "https://robohash.org/alice",
-  },
-  {
-    name: "Bob",
-    username: "@bob",
-    body: "Incredible work! The attention to detail is phenomenal.",
-    img: "https://robohash.org/bob",
-  },
-  {
-    name: "Charlie",
-    username: "@charlie",
-    body: "This exceeded all my expectations. Absolutely stunning!",
-    img: "https://robohash.org/charlie",
-  },
-  {
-    name: "Dave",
-    username: "@dave",
-    body: "Simply breathtaking. The best decision I've made in a while.",
-    img: "https://robohash.org/dave",
-  },
-  {
-    name: "Eve",
-    username: "@eve",
-    body: "So glad I found this. It has changed the game for me.",
-    img: "https://robohash.org/eve",
-  },
-];
+

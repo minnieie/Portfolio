@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";  // Instead of "motion/react"
 function Navigation() {
   return (
     <ul className="nav-ul">
@@ -36,7 +36,7 @@ const Navbar = () => {
             href="/"
             className="text-xl font-bold transition-colors text-neutral-400 hover:text-white"
           >
-            Ali
+            Toh Rui Min
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}
