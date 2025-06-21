@@ -319,7 +319,7 @@ export const myProjects = [
     logo: "",
     image: "/assets/projects/3DF_Chesspiece.png",
     media: {
-      video: "/assets/projects/3DF_knight.mp4",
+     youtube: "https://youtu.be/tu4TYBzxmbY?si=ui2h4QYocMerHeVe",
     },
     processSteps: [
     {
