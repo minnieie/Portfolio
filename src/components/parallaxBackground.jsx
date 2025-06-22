@@ -11,10 +11,10 @@ const ParallaxBackground = () => {
   const base = import.meta.env.BASE_URL;
 
   return (
-    <div className="absolute top-0 left-0 w-screen h-full m-0 p-0">
+    <div className="absolute top-0 left-0 w-screen h-screen m-0 p-0">
       {/* Background Sky */}
       <div
-        className="absolute inset-0 w-screen h-full m-0 p-0"
+        className="absolute inset-0 w-full h-full m-0 p-0"
         style={{
           backgroundImage: `url(${base}assets/sky.jpg)`,
           backgroundPosition: "center",
@@ -22,10 +22,10 @@ const ParallaxBackground = () => {
           backgroundRepeat: "no-repeat",
         }}
       />
-      
+
       {/* Mountain Layer 3 */}
       <motion.div
-        className="absolute inset-0 w-screen h-full m-0 p-0"
+        className="absolute inset-0 w-full h-full m-0 p-0"
         style={{
           backgroundImage: `url(${base}assets/mountain-3.png)`,
           backgroundPosition: "bottom",
@@ -34,10 +34,10 @@ const ParallaxBackground = () => {
           y: mountain3Y,
         }}
       />
-      
+
       {/* Planets */}
       <motion.div
-        className="absolute inset-0 w-screen h-full m-0 p-0"
+        className="absolute inset-0 w-full h-full m-0 p-0"
         style={{
           backgroundImage: `url(${base}assets/planets.png)`,
           backgroundPosition: "bottom",
@@ -46,10 +46,10 @@ const ParallaxBackground = () => {
           x: planetsX,
         }}
       />
-      
+
       {/* Mountain Layer 2 */}
       <motion.div
-        className="absolute inset-0 w-screen h-full m-0 p-0"
+        className="absolute inset-0 w-full h-full m-0 p-0"
         style={{
           backgroundImage: `url(${base}assets/mountain-2.png)`,
           backgroundPosition: "bottom",
@@ -58,10 +58,10 @@ const ParallaxBackground = () => {
           y: mountain2Y,
         }}
       />
-      
+
       {/* Mountain Layer 1 */}
       <motion.div
-        className="absolute inset-0 w-screen h-full m-0 p-0"
+        className="absolute inset-0 w-full h-full m-0 p-0"
         style={{
           backgroundImage: `url(${base}assets/mountain-1.png)`,
           backgroundPosition: "bottom",

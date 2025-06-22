@@ -16,7 +16,7 @@ import Art from "./sections/Art";
 import ThreeD from "./sections/3D";
 
 const Home = () => (
-  <div className="container mx-auto max-w-7xl">
+  <div className="max-w-7xl mx-auto w-full overflow-x-hidden px-4 sm:px-6 lg:px-8">
     <Navbar />
     <Hero />
     <About />

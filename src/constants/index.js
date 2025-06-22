@@ -15,36 +15,36 @@ export const myProjects = [
       {
         title: "Concept Development",
         description: "Created initial sketches and mood boards to establish the medieval fantasy aesthetic and layout of the hall.",
-        image:  "/assets/process/3RT_ASG1_pureref.png"
+        image: "/Portfolio/assets/process/3RT_ASG1_pureref.png"
       },
       {
         title: "Modular Asset Creation",
         description: "Built 4+ modular assets in Maya using shared texture atlas for optimized rendering and seamless environment construction.",
-        image: "/assets/process/modular-assets.png" 
+        image: "/Portfolio/assets/process/modular-assets.png" 
       },
       {
         title: "WhiteBoxing & Layout",
         description: "Created a block-out version of the environment using simple geometry to establish scale and layout.",
-        image: "/assets/process/whitebox.png"
+        image: "/Portfolio/assets/process/whitebox.png"
       },
       {
         title: "Hero Asset Development",
         description: "Created the floating crystal centerpiece using high-low poly workflow with detailed Substance Painter texturing.",
-        image: "/assets/process/3RT_ASG1_crystal.png"
+        image: "/Portfolio/assets/process/3RT_ASG1_crystal.png"
       },
       {
         title: "Unity Integration",
         description: "Integrated the floating crystal centerpiece into the Unity environment, ensuring proper scale and interaction.",
-        image: "/assets/process/3RT_ASG1_integration.png"
+        image: "/Portfolio/assets/process/3RT_ASG1_integration.png"
       },
       {
         title: "Lighting & Effects",
         description: "Configured dynamic lighting and post-processing effects in Unity, including emissive bloom for the crystal. I also integrated BGM and VFX of fire for an immersive experience.",
-        image: "/assets/process/3RT_ASG1_lighting.png"
+        image: "/Portfolio/assets/process/3RT_ASG1_lighting.png"
       },
       {
         title: "Final Product",
-        image: "/assets/process/3RT_ASG1_final.png"
+        image: "/Portfolio/assets/process/3RT_ASG1_final.png"
       },
     ],
     challenges: [
@@ -63,11 +63,11 @@ export const myProjects = [
     video: "https://youtu.be/hugOmLFzsw8?si=v0Qh06QOILxML8KY",
     build: "/downloads/medieval-hall-build.zip"
   },
-  image: "/assets/projects/medieval-hall.jpg",
+  image: "/Portfolio/assets/projects/medieval-hall.jpg",
   tags: [
-      { id: 1, name: "Unity", path: "/assets/logos/unity.svg" },
-      { id: 2, name: "Maya", path: "/assets/logos/maya.svg" },
-      { id: 3, name: "Substance Painter", path: "/assets/logos/substance-painter.svg" },
+      { id: 1, name: "Unity", path: "/Portfolio/assets/logos/unity.svg" },
+      { id: 2, name: "Maya", path: "/Portfolo/assets/logos/maya.svg" },
+      { id: 3, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
     ],
   },
  {
@@ -85,42 +85,42 @@ export const myProjects = [
       video: "https://youtu.be/1zsLKv9l6HA?si=NrKzOPAkt1NIezcm",
       repository: "https://github.com/minnieie/MoneyHeist.git"
     },
-    image: "/assets/projects/money-heist.jpg",
+    image: "/Portfolio/assets/projects/money-heist.jpg",
     processSteps: [
       {
         title: "Switching Cameras between Main camera and Player camera",
         description: "Implemented smooth transitions between the main camera and the player camera to show mission panel and player view.",
-        image:  "/assets/process/I3E_ASG1_Panel.png"
+        image:  "/Portfolio/assets/process/I3E_ASG1_Panel.png"
       },
       {
         title: "Importing Assets",
         description: "Utilized the Unity Asset Store and Sketchfab to find and import high-quality assets and made the items functionable to steal the items using raycast.",
-        image: "/assets/process/I3E_ASG1_Assets.png"
+        image: "/Portfolio/assets/process/I3E_ASG1_Assets.png"
       },
       {
         title: "Implement CCTV cameras that could move, detect the player and decrease their health upon collision.",
         description: "Utilized the Unity Asset Store and Sketchfab to find and import high-quality assets and made the items functionable to steal the items using raycast.",
-        image: "/assets/process/I3E_ASG1_CCTV.png"
+        image: "/Portfolio/assets/process/I3E_ASG1_CCTV.png"
       },
       {
         title: "NPCs",
         description: "Implemented NPCs that wander around the map using navmesh and able to drop items.",
-        image: "/assets/process/I3E_ASG1_NPC.png"
+        image: "/Portfolio/assets/process/I3E_ASG1_NPC.png"
       },
       {
         title: "Locked Doors",
         description: "Implemented locked doors that require keycards to access, adding an extra layer of challenge.",
-        image: "/assets/process/I3E_ASG1_LockedDoor.png"
+        image: "/Portfolio/assets/process/I3E_ASG1_LockedDoor.png"
       },
       {
         title: "SFX and UI",
         description: "Implemented sound effects and user interface elements to enhance gameplay experience.",
-        image: "/assets/process/I3E_ASG1_SFX.png"
+        image: "/Portfolio/assets/process/I3E_ASG1_SFX.png"
       },
       {
         title: "You Win!",
         description: "Upon player collecting all collectibles, a congratulatory message is displayed.",
-        image: "/assets/process/I3E_ASG1_Congrats.png"
+        image: "/Portfolio/assets/process/I3E_ASG1_Congrats.png"
       },
     ],
     challenges: [
@@ -151,17 +151,17 @@ export const myProjects = [
       {
         id: 1,
         name: "Unity",
-        path: "/assets/logos/unity.svg"
+        path: "/Portfolio/assets/logos/unity.svg"
       },
       {
         id: 2,
         name: "C#",
-        path: "/assets/logos/csharp.svg"
+        path: "/Portfolio/assets/logos/csharp.svg"
       },
       {
         id: 3,
         name: "GitHub",
-        path: "/assets/logos/github.svg"
+        path: "/Portfolio/assets/logos/github.svg"
       },
     ],
     technicalDetails: {
@@ -195,27 +195,27 @@ export const myProjects = [
       video: "https://youtu.be/NPNUpSrweV4?si=k3XiSor4eRMGnz8y",
       repository: "https://github.com/minnieie/BLACKPINK.git"
     },
-    image: "/assets/projects/BLACKPINK.png", // You can swap this with your actual image path
+    image: "/Portfolio/assets/projects/BLACKPINK.png", // You can swap this with your actual image path
     processSteps: [
     {
       title: "Building a Responsive Navigation Bar",
       description: "Created a hamburger-style mobile menu with JavaScript to toggle visibility and ensure the navigation bar adapts across screen sizes.",
-      image: "/assets/process/ID_ASG1_Nav.png"
+      image: "/Portfolio/assets/process/ID_ASG1_Nav.png"
     },
     {
       title: "Implementing the Mini Store",
       description: "Developed a functional store page where users could add and remove items from the cart. Ensured quantity updates, total price calculation, and checkout validation were working correctly.",
-      image: "/assets/process/ID_ASG1_Store.png"
+      image: "/Portfolio/assets/process/ID_ASG1_Store.png"
     },
     {
       title: "Embedding Fullscreen YouTube Video",
       description: "Used the YouTube Iframe API on the About page to autoplay, loop, and allow pause/play interactions. Ensured the video was full-width and responsive.",
-      image: "/assets/process/ID_ASG1_video.png"
+      image: "/Portfolio/assets/process/ID_ASG1_video.png"
     },
     {
       title: "Final Testing & Deployment",
       description: "Tested across different browsers and screen sizes for compatibility. Deployed the final version using GitHub Pages with a clean project structure.",
-      image: "/assets/projects/BLACKPINK.png"
+      image: "/Portfolio/assets/projects/BLACKPINK.png"
     }
   ],
 
@@ -233,22 +233,22 @@ export const myProjects = [
       {
         id: 1,
         name: "HTML",
-        path: "/assets/logos/html5.svg",
+        path: "/Portfolio/assets/logos/html5.svg",
       },
       {
         id: 2,
         name: "CSS",
-        path: "/assets/logos/css.svg",
+        path: "/Portfolio/assets/logos/css.svg",
       },
       {
         id: 3,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: "/Portfolio/assets/logos/javascript.svg",
       },
       {
         id: 4,
         name: "GitHub",
-        path: "/assets/logos/github.svg",
+        path: "/Portfolio/assets/logos/github.svg",
       },
     ],
   },
@@ -268,22 +268,22 @@ export const myProjects = [
     media: {
       video: "https://youtu.be/HxFdH1vYxhk?si=qCKE4ma0GxqW4blr",
     },
-    image: "/assets/projects/DreamHouse.jpg",
+    image: "/Portfolio/assets/projects/DreamHouse.jpg",
     processSteps: [
     {
       title: "Using ProBuilder for Architectural Modeling",
       description: "Being my first Unity project, it was hard to utilize ProBuilder to create detailed architectural models, including walls, windows, and doors, ensuring accurate spatial representation.",
-      image: "/assets/process/STLD_ASG1_Floorplan.png"
+      image: "/Portfolio/assets/process/STLD_ASG1_Floorplan.png"
     },
     {
       title: "Adding Unity Assets for Furniture and Decor",
       description: "Incorporated various 3D models and textures for furniture and decor elements using Unity’s Asset Store, enhancing the overall realism of the environment. I also created added terrain and a pool.",
-      image: "/assets/process/STLD_ASG1_Assets.png"
+      image: "/Portfolio/assets/process/STLD_ASG1_Assets.png"
     },
     {
       title: "Global Illumination for Realistic Lighting",
       description: "Utilized Unity's Global Illumination to create realistic lighting effects, enhancing the mood and atmosphere of the environment.",
-      image: "/assets/process/STLD_ASG1_Lighting.png"
+      image: "/Portfolio/assets/process/STLD_ASG1_Lighting.png"
     }
   ],
     challenges: [
@@ -296,12 +296,12 @@ export const myProjects = [
       {
         id: 1,
         name: "Unity",
-        path: "/assets/logos/unity.svg",
+        path: "/Portfolio/assets/logos/unity.svg",
       },
       {
         id: 2,
         name: "C#",
-        path: "/assets/logos/csharp.svg",
+        path: "/Portfolio/assets/logos/csharp.svg",
       },
     ],
   },
@@ -318,7 +318,7 @@ export const myProjects = [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/3DF_Chesspiece.png",
+    image: "/Portfolio/assets/projects/3DF_Chesspiece.png",
     media: {
      youtube: "https://youtu.be/tu4TYBzxmbY?si=ui2h4QYocMerHeVe",
     },
@@ -326,17 +326,17 @@ export const myProjects = [
     {
       title: "Using Maya for 3D Modeling",
       description: "Being my first 3D modeling project, it was challenging to create detailed models of chess pieces using Maya, this was my first 3 chess piece model.",
-      image: "/assets/process/3DF_ASG1_3chess.png"
+      image: "/Portfolio/assets/process/3DF_ASG1_3chess.png"
     },
     {
       title: "Turntable for Knight Piece",
       description: "Created a turntable animation for the knight piece in After Effects to showcase its design from all angles.",
-      image: "/assets/process/3DF_ASG1_knight.png"
+      image: "/Portfolio/assets/process/3DF_ASG1_knight.png"
     },
     {
       title: "UV Unwrapping & Check",
       description: "Unwrapped the chess piece UVs and applied a checker texture to identify stretching or distortion. Adjusted the UV islands to ensure they appeared evenly scaled and neutral (white), indicating a clean, undistorted layout suitable for texturing.",
-      image: "/assets/process/3DF_ASG1_UV_White.png"
+      image: "/Portfolio/assets/process/3DF_ASG1_UV_White.png"
     }
   ],
 challenges: [
@@ -358,12 +358,13 @@ challenges: [
       {
         id: 1,
         name: "Maya",
-        path: "/assets/logos/maya.svg",
+        path: "/Portfolio/assets/logos/maya.svg",
       },
+      { id: 2, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
       {
-        id: 2,
+        id: 3,
         name: "After Effects",
-        path: "/assets/logos/AfterEffects.svg",
+        path: "/Portfolio/assets/logos/AfterEffects.svg",
       },
     ],
   },
@@ -380,7 +381,7 @@ challenges: [
     ],
     href: "",
     logo: "",
-    image: "/assets/projects/DUX_ASG1.png",
+    image: "/Portfolio/assets/projects/DUX_ASG1.png",
     media: {
       youtube: "https://youtu.be/NYo75-VmRtM",
       figma: "https://www.figma.com/proto/rdSDIdkdHu0I66UwZHq2Dn/DUX_Assg1_P01_TohRuiMin?node-id=32-208&p=f&t=LviDjniY4Lp84IEl-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=25%3A63&show-proto-sidebar=1"
@@ -389,28 +390,28 @@ challenges: [
       {
         title: "User Research & Persona Development",
         description: "Kicked off the project with interviews and empathy mapping to define the emotional needs and social habits of casual gamers. Synthesized insights into clear user personas and journey maps to guide design decisions.",
-        image: "/assets/process/DUX_ASG1_EmpathyMap.png"
+        image: "/Portfolio/assets/process/DUX_ASG1_EmpathyMap.png"
       },
       {
         title: "User Journey Mapping & Competitive Analysis",
         description: "Analyzed user journeys and conducted competitive analysis to identify design gaps and opportunities for enhancing the user experience.",
-        image: "/assets/process/DUX_ASG1_UserJourney.png"
+        image: "/Portfolio/assets/process/DUX_ASG1_UserJourney.png"
       },
       {
         title: "User Interaction Flow",
         description: "Mapped out the core flows for both mobile and smartwatch experiences, focusing on smooth transitions across login, matchmaking, voice chat, and community browsing. This helped validate design choices and ensured each interaction aligned with the app’s low-pressure social vibe.",
-        image: "/assets/process/DUX_ASG1_Interaction.png"
+        image: "/Portfolio/assets/process/DUX_ASG1_Interaction.png"
       },  
 
       {
         title: "A Day In The Life Storyboard",
         description: "Mapped out a typical user’s day to identify key interactions and emotional touchpoints, ensuring the design addressed real-world use cases.",
-        image: "/assets/process/DUX_ASG1_Storyboard.png"
+        image: "/Portfolio/assets/process/DUX_ASG1_Storyboard.png"
       },
       {
         title: "Wireframing & Low-Fidelity Prototypes",
         description: "Sketched mobile and smartwatch interface flows that mapped out key interactions—from matchmaking to voice calls. Prioritized accessibility and emotional comfort for users who may be new to social gaming spaces.",
-        image: "/assets/process/DUX_ASG1_Wireframe.png"
+        image: "/Portfolio/assets/process/DUX_ASG1_Wireframe.png"
       },
     ],
     challenges: [
@@ -428,7 +429,7 @@ challenges: [
       {
         id: 1,
         name: "Figma",
-        path: "/assets/logos/figma.svg",
+        path: "/Portfolio/assets/logos/figma.svg",
       },
     ],
   },
@@ -442,32 +443,32 @@ export const myIntegratedProjects = [
     subDescription: [
       "Modules: 3D Fundamentals, Applied Design, Interactive Development, Gamification Concepts, Production Management"
     ],
-    image: "/assets/IP/1.2.png",
+    image: "/Portfolio/assets/IP/1.2.png",
     href: "",
     tags: [
-      { id: 1, name: "Firebase", path: "/assets/logos/firebase.svg" },
+      { id: 1, name: "Firebase", path: "/Portfolio/assets/logos/firebase.svg" },
       {
         id: 2,
         name: "Jira",
-        path: "/assets/logos/jira-5.png",
+        path: "/Portfolio/assets/logos/jira-5.png",
       },
-      { id: 3, name: "Figma", path: "/assets/logos/figma.svg" },
-      { id: 4, name: "Maya", path: "/assets/logos/maya.svg" },
-      { id: 5, name: "Substance Painter", path: "/assets/logos/substance-painter.svg" },
+      { id: 3, name: "Figma", path: "/Portfolio/assets/logos/figma.svg" },
+      { id: 4, name: "Maya", path: "/Portfolio/assets/logos/maya.svg" },
+      { id: 5, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
       {
         id: 6,
         name: "HTML",
-        path: "/assets/logos/html5.svg",
+        path: "/Portfolio/assets/logos/html5.svg",
       },
       {
         id: 7,
         name: "CSS",
-        path: "/assets/logos/css.svg",
+        path: "/Portfolio/assets/logos/css.svg",
       },
       {
         id: 8,
         name: "JavaScript",
-        path: "/assets/logos/javascript.svg",
+        path: "/Portfolio/assets/logos/javascript.svg",
       },
     ],
     media: {
@@ -478,27 +479,27 @@ processSteps: [
   {
     title: "Research & Project Vision",
     description: "Began by identifying target user demographics, specifically figurine collectors, and explored trends in gamified e-commerce and niche communities. Set the design vision around playful interaction, personalization, and community engagement inspired by collector culture.",
-    image: "/assets/process/IP_1.2_GC.png"
+    image: "/Portfolio/assets/process/IP_1.2_GC.png"
   },
   {
     title: "Firebase Architecture & Backend Dev",
     description: "Built and structured the backend using Firebase for authentication, user profiles, point tracking, and wishlist logic. Developed JSON schemas to enable dynamic data display across product listings and checkout flows.",
-    image: "/assets/process/IP_1.2_Firebase.png"
+    image: "/Portfolio/assets/process/IP_1.2_Firebase.png"
   },
   {
     title: "3D Asset Integration",
     description: "Made a Hello Kitty and SkullPanda 3D model in Maya and Substance Painter, then integrated them into the Sketchfab.",
-    image: "/assets/process/IP_1.2_3D.png"
+    image: "/Portfolio/assets/process/IP_1.2_3D.png"
   },
   {
     title: "Wireframing to High-Fidelity Prototypes",
     description: "Contributed on low-fidelity wireframes that mapped out the shopping journey—from browsing to post-purchase engagement. Refined the UI with soft colors, bold CTAs, and intuitive gestures suited for both desktop and mobile devices.",
-    image: "/assets/process/IP_1.2_Wireframe.png"
+    image: "/Portfolio/assets/process/IP_1.2_Wireframe.png"
   },
   {
     title: "Sprint Management & Iteration",
     description: "Used Jira and SCRUM methodologies to manage agile sprints. Broke down backlog items, tracked velocity, and ran retrospectives to improve handoff efficiency between design, development, and QA.",
-    image: "/assets/process/IP_1.2_Sprints.png"
+    image: "/Portfolio/assets/process/IP_1.2_Sprints.png"
   }
 ],
 challenges: [

@@ -5,9 +5,14 @@ import { useFrame } from "@react-three/fiber";
 
 export function SkullPanda(props) {
   const group = useRef();
-  const base = import.meta.env.BASE_URL;
-  const { scene } = useGLTF(`${base}skullpanda.glb`); // Correct path for public/skullpanda.glb
 
+  // This will automatically be "/Portfolio/" in production (based on Vite config)
+  const base = import.meta.env.BASE_URL;
+
+  // Load the GLB model using the correct path
+  const { scene } = useGLTF(`${base}skullpanda.glb`);
+
+  // Animated bounce using motion
   const yPosition = useMotionValue(5);
   const ySpring = useSpring(yPosition, { damping: 30 });
 
@@ -35,5 +40,5 @@ export function SkullPanda(props) {
   );
 }
 
-// Preload with the correct path as well
+// Preload the model (for performance)
 useGLTF.preload(`${import.meta.env.BASE_URL}skullpanda.glb`);

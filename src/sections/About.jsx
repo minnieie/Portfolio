@@ -21,9 +21,12 @@ const About = () => {
             className="absolute object-cover w-full h-full scale-[1.2] -right-[2rem] -top-[1rem] md:scale-[1.5] md:right-0 md:top-0 lg:scale-[1.3]"
             alt="Me"
           />
-          <div className="z-10 relative">
-            <p className="headtext">Hi, I'm Toh Rui Min</p>
-            <p className="subtext">
+          <div className="z-10 relative text-center md:text-left flex flex-col">
+            <p className="headtext">Hi,</p>
+            <p className="headtext">
+              I'm <span className="font-semibold">Toh Rui Min</span>
+            </p>
+            <p className="subtext max-w-xs mx-auto md:mx-0">
               A student in Immersive Media with a passion for 3D art, UI/UX design and front-end development.
             </p>
           </div>
