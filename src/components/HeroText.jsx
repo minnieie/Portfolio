@@ -1,5 +1,5 @@
 import { FlipWords } from "./FlipWords";
-import { motion } from "framer-motion"; // small correction: use "framer-motion", not "motion/react"
+import { motion } from "framer-motion";
 
 const HeroText = () => {
   const words = ["Secure", "Modern", "Scalable"];
@@ -10,7 +10,7 @@ const HeroText = () => {
 
   return (
     <div className="z-10 mt-20 w-full max-w-4xl px-4 text-center md:mt-40 md:text-left">
-      {/* Desktop View */}
+      {/* Desktop View - unchanged */}
       <div className="hidden md:flex flex-col space-y-4">
         <motion.h1
           className="text-4xl font-medium text-white"
@@ -55,17 +55,18 @@ const HeroText = () => {
         </motion.p>
       </div>
 
-      {/* Mobile View */}
+      {/* Mobile View - updated */}
       <div className="flex flex-col space-y-6 md:hidden">
-        <motion.p
-          className="text-4xl font-medium text-white"
+        <motion.div
           variants={variants}
           initial="hidden"
           animate="visible"
           transition={{ delay: 1 }}
+          className="flex flex-col"
         >
-          Hi, I'm Toh Rui Min
-        </motion.p>
+          <span className="text-4xl font-medium text-white">Hi,</span>
+          <span className="text-4xl font-medium text-white">I'm Toh Rui Min</span>
+        </motion.div>
 
         <motion.p
           className="text-4xl font-medium text-neutral-300"

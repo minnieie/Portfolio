@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const About = () => {
   const grid2Container = useRef();
   const [hasInteracted, setHasInteracted] = useState(false);
-
   const base = import.meta.env.BASE_URL;
 
   return (
@@ -22,11 +21,10 @@ const About = () => {
             alt="Me"
           />
           <div className="z-10 relative text-center md:text-left flex flex-col">
-            <p className="headtext">Hi,</p>
-            <p className="headtext">
-              I'm <span className="font-semibold">Toh Rui Min</span>
-            </p>
-            <p className="subtext max-w-xs mx-auto md:mx-0">
+            <h1 className="headtext">
+              Hi, I'm <span className="font-semibold">Toh Rui Min</span>
+            </h1>
+            <p className="subtext max-w-xs mx-auto md:mx-0 mt-2">
               A student in Immersive Media with a passion for 3D art, UI/UX design and front-end development.
             </p>
           </div>
@@ -85,7 +83,7 @@ const About = () => {
         <div className="grid-special-color grid-4 relative">
           <div className="flex flex-col items-center justify-center gap-4 size-full relative">
             <p className="text-center headtext">
-              I’m open to opportunities, send me an email!
+              I'm open to opportunities, send me an email!
             </p>
             <CopyEmailButton base={base} />
           </div>

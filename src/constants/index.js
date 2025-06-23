@@ -66,7 +66,7 @@ export const myProjects = [
   image: "/Portfolio/assets/projects/medieval-hall.jpg",
   tags: [
       { id: 1, name: "Unity", path: "/Portfolio/assets/logos/unity.svg" },
-      { id: 2, name: "Maya", path: "/Portfolo/assets/logos/maya.svg" },
+      { id: 1, name: "Maya", path: "/Portfolio/assets/logos/maya.svg" },
       { id: 3, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
     ],
   },
