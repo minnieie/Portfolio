@@ -70,8 +70,77 @@ export const myProjects = [
       { id: 3, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
     ],
   },
- {
+  {
     id: 2,
+    title: "Sci-Fi Corridor Environment",
+    description: "A real-time 3D sci-fi interior featuring an L-shaped corridor with a central hero junction, designed for immersive first-person exploration in Unity.",
+    subDescription: [
+      "Designed and built 4+ modular corridor assets in Maya, unified via a shared texture atlas for performance optimization",
+      "Crafted a hero asset for the junction area using high-to-low poly baking and detailed Substance Painter texturing",
+      "Applied trim sheet techniques to enhance surface detail consistency across modular components",
+      "Set up mixed lighting and post-processing effects (bloom, fog, vignette) to amplify atmosphere in Unity",
+      "Compiled a standalone first-person playable build with seamless portal transitions and interactive VFX"
+    ],
+    processSteps: [
+      {
+        title: "Concept Development",
+        description: "Established the visual direction of the sci-fi corridor through reference gathering from Pinterest",
+        image: "/Portfolio/assets/process/3RT_ASG2_pureref.png"
+      },
+      {
+        title: "Modular Asset Creation",
+        description: "Built 4+ modular assets in Maya using shared texture atlas for optimized rendering and seamless environment construction.",
+        image: "/Portfolio/assets/process/3RT_ASG2_assets.png" 
+      },
+      {
+        title: "Hero Asset Development",
+        description: "Modeled a high-poly and low-poly version of R2-D2 for baking and optimization workflows.",
+        image: "/Portfolio/assets/process/3RT_ASG2_Hero.png"
+      },
+      {
+        title: "Substance Painter Texturing",
+        description: "The low-poly R2-D2 model was then imported into Substance Painter for detailed texture painting, including emissive, metallic, and roughness maps tailored for real-time rendering.",
+        image: "/Portfolio/assets/process/3RT_ASG2_R2D2.png"
+      },
+      {
+        title: "Unity Integration",
+        description: "Integrated R2-D2 into the Unity build with proximity-triggered interaction to enhance environmental storytelling and immersion.",
+        image: "/Portfolio/assets/process/3RT_ASG2_integration.png"
+      },
+      {
+        title: "Lighting & Effects",
+        description: "Configured dynamic lighting and post-processing effects in Unity. I also integrated BGM and VFX of sparks and smoke for an immersive experience.",
+        image: "/Portfolio/assets/process/3RT_ASG2_lighting.png"
+      },
+      {
+        title: "Final Product",
+        image: "/Portfolio/assets/process/3RT_ASG2_final.png"
+      },
+    ],
+    challenges: [
+    {
+      problem: "Modeling R2-D2 from scratch without tutorials or guided references was challenging.",
+      solution: "Referenced Sketchfab models and relied on visual observation to manually construct both high and low poly versions."
+    },
+    {
+      problem: "Creating a smooth teleportation system at the end of the L-shaped corridor was tricky.",
+      solution: "Implemented a seamless transition using Unity’s trigger system, allowing the player to walk through an animated door and return to the starting point without visual disruption."
+    },
+
+  ],
+  href: null,
+  media: {
+    video: "https://youtu.be/70YtcZkkxm4?si=fIAbGVihpYu9RZE6",
+  },
+  image: "/Portfolio/assets/projects/SciFi-corridor.png",
+  tags: [
+      { id: 1, name: "Unity", path: "/Portfolio/assets/logos/unity.svg" },
+      { id: 1, name: "Maya", path: "/Portfolio/assets/logos/maya.svg" },
+      { id: 3, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
+    ],
+  },
+ {
+    id: 3,
     title: "Money Heist",
     description: "A first-person stealth game with time pressure mechanics, featuring security systems, NPC interactions, and 40+ collectibles across interconnected indoor/outdoor environments.",
     subDescription: [
@@ -181,7 +250,7 @@ export const myProjects = [
     }
   },
   {
-    id: 3,
+    id: 4,
     title: "BLACKPINK Revamped Website",
     description:
       "A responsive, visually immersive front-end website showcasing BLACKPINK through engaging micro-interactions and scroll-based animations.",
@@ -254,7 +323,7 @@ export const myProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Dream House",
     description:
       "An immersive 3D environment built in Unity simulating a my Dream House, designed as part of a spatial theory and level design assignment.",
@@ -306,7 +375,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "3D Chess Piece",
     description:
       "A reconstructed South German Staunton chess set modeled in Maya, textured with wear-and-tear aesthetics for real-time rendering.",
@@ -369,7 +438,7 @@ challenges: [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "PlayPals",
     description:
       "A social gaming platform designed to foster real friendships through shared gaming interests, personalized matchmaking, and community interaction.",
@@ -513,8 +582,90 @@ challenges: [
     solution: "Connected the dots across design rationale, backend logic, and 3D design through a unified brand tone—centered on a welcoming, collector-first ethos exemplified by the cat-faced Miao Miao mascot."
   }
 ]
+  },
+  {
+    id: 2,
+    title: "CrimeLens",
+    description: "Crime Lens is an immersive investigative game where you play as an undercover agent infiltrating a fictional scam syndicate. Navigate through departments modeled after real-world scam operations, solving puzzles and uncovering clues inspired by actual tactics—like phishing emails, deepfake videos, and deceptive CAPTCHAs. Your objective: gather incriminating evidence, locate the hidden server room, extract critical data, and escape undetected.",
+    subDescription: [
+      "Modules: 3D For Real Time, Interactive 3D Experience, Spatial Theory & Level Design, Designing User Experience"
+    ],
+    image: "/Portfolio/assets/IP/2.1.png",
+    href: "",
+    tags: [
+      {
+        id: 1,
+        name: "Jira",
+        path: "/Portfolio/assets/logos/jira-5.png",
+      },
+      { id: 2, name: "Figma", path: "/Portfolio/assets/logos/figma.svg" },
+      { id: 3, name: "Maya", path: "/Portfolio/assets/logos/maya.svg" },
+      { id: 4, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
+      {
+        id: 5,
+        name: "Unity",
+        path: "/Portfolio/assets/logos/unity.svg",
+      },
+    ],
+    media: {
+      youtube: "https://youtu.be/D-WosQIL1rY?si=NgNHMPsucAmTPYZS",
+      repository: "https://github.com/minnieie/CrimeLens"
+    },
+processSteps: [
+  {
+    title: "Gameplay Flow",
+    description: "We first mapped out the gameplay flow to visualize key tasks, interactions, and progression paths for players.",
+    image: "/Portfolio/assets/process/IP_2.1_Flow.png"
+  },
+  {
+    title: "Whitebox & Level Blocking",
+    description: "We built a whitebox prototype to test core gameplay mechanics and layout flow, using basic shapes to block out key areas and player paths.",
+    image: "/Portfolio/assets/process/IP_2.1_Whitebox.png"
+  },
+  {
+    title: "3D Asset Research",
+    description: "We compiled a PureRef board to guide our asset creation, with each team member assigned specific elements. I focused on designing the lights, walls, and doors to match the overall visual style.",
+    image: "/Portfolio/assets/process/IP_2.1_pureref.png"
+  },
+  {
+    title: "3D Asset Implementation",
+    description: "We organized all our 3D assets in one scene for easy access and placement, streamlining the process of building and testing the level.",
+    image: "/Portfolio/assets/process/IP_2.1_assets.png"
+  },
+  {
+    title: "Character Animations",
+    description: "I used Mixamo to assign different animations to each character, customizing their movements to fit various gameplay roles and interactions.",
+    image: "/Portfolio/assets/process/IP_2.1_Animations.png"
+  },
+  {
+    title: "Game Mechanics & Scripting",
+    description: "We programmed different computers to trigger unique activities when interacted with—like identifying AI-generated videos, solving CAPTCHA puzzles, and spotting fake emails.",
+    image: "/Portfolio/assets/process/IP_2.1_features.png"
+  },
+  {
+    title: "Wireframing to High-Fidelity Prototypes",
+    description: "We designed a scam-awareness kiosk in Figma for use in schools and community centres, featuring interactive activities like quizzes and media analysis. Players who answer correctly earn points, climb the leaderboard, and stand a chance to win vouchers—encouraging continued engagement and learning. Key features from the kiosk were also integrated into our game to reinforce these mechanics.",
+    image: "/Portfolio/assets/process/IP_2.1_Wireframe.png"
+  },
+  {
+    title: "Gameplay Loop",
+    description: "Our gameplay loop encourages repeat engagement by rewarding users for completing tasks and answering correctly. The chance to win vouchers and climb the leaderboard keeps players coming back.",
+    image: "/Portfolio/assets/process/IP_2.1_Loop.png"
+  },
+],
+challenges: [
 
+  {
+    problem: "Coordinating team schedules for daily sprints during the integrated project.",
+    solution: "Maintained constant communication and flexibility to find common working hours and keep progress steady."
+  },
+  {
+    problem: "Learning how to implement video playback in Unity with no prior experience.",
+    solution: "Researched online tutorials and experimented with Unity’s video player tools to successfully integrate video content."
   }
+]
+
+  },
 ];
 
 export const mySocials = [
@@ -539,6 +690,16 @@ export const mySocials = [
 
 
 export const experiences = [
+  {
+    title: "President",
+    job: "The DOT SIG",
+    date: "Sep 2025 – Present",
+    contents: [
+      "Led a student art club focused on creative growth and community bonding through regular drawing sessions and events.",
+      "Oversaw social media presence (@np.dotsig), driving member participation and showcasing student artwork to a wider audience.",
+      "Collaborated with faculty and peers to sustain a supportive, imaginative community that encourages artistic growth and interdisciplinary exploration.",
+    ]
+  },
   {
     title: "Vice President",
     job: "Nullsec",

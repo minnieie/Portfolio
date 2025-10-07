@@ -16,6 +16,11 @@ const threeDProjects = [
     title: "Hello Kitty Figurine",
     embedUrl: "https://sketchfab.com/models/13fdad84e9f145ffa073ba8f2b8ddfab/embed",
     note: "Model for Integrated Project Y1.2"
+  },
+  {
+    title: "R2D2",
+    embedUrl: "https://sketchfab.com/models/263229ddbe474ccc91f74d689223e0c5/embed",
+    note: "Model for Sci-Fi Corridor Project"
   }
 ];
 
