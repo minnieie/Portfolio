@@ -385,8 +385,6 @@ export const myProjects = [
       "Applied textures with artistic freedom while retaining reference color schemes, incorporating aging effects to enhance realism.",
       "Presented assets in a clean, optimized turntable setup using Unity3D and After Effects, with transitions from textured to wireframe views.",
     ],
-    href: "",
-    logo: "",
     image: "/Portfolio/assets/projects/3DF_Chesspiece.png",
     media: {
      youtube: "https://youtu.be/tu4TYBzxmbY?si=ui2h4QYocMerHeVe",
@@ -448,8 +446,6 @@ challenges: [
       "Built high-fidelity UI mockups focused on personalization, communication flexibility, and mental well-being.",
       "Explored competitive analysis of Discord, Reddit, and Facebook to identify design gaps and improve community bonding.",
     ],
-    href: "",
-    logo: "",
     image: "/Portfolio/assets/projects/DUX_ASG1.png",
     media: {
       youtube: "https://youtu.be/NYo75-VmRtM",
@@ -502,6 +498,156 @@ challenges: [
       },
     ],
   },
+  {
+    id: 8,
+    title: "Vacation Island",
+    description:
+      "A real-time 3D environment project built in Unity URP, showcasing terrain modeling, modular architecture, and immersive VFX for a private island setting.",
+    subDescription: [
+      "Designed and sculpted island terrain with high-ground, scattered rocks, grass, trees, and ocean shoreline.",
+      "Created modular residential compound architecture and integrated a hero tree as a focal design element.",
+      "Applied Shader Graph for ocean water effects and implemented cloth simulation for dynamic scene realism.",
+      "Integrated local post-process volume transitions, lighting, and baked lightmaps for a polished, stand-alone Unity build.",
+    ],
+    image: "/Portfolio/assets/projects/3DE.png",
+    media: {
+      youtube: "https://youtu.be/r8-KZ-h0aFY",
+    },
+    processSteps: [
+      {
+        title: "Model and Integrate Hero Tree",
+        description: "Scult the Tree in Unity and  added textures to it",
+        image: "/Portfolio/assets/process/3DE_Tree.png"
+      },
+      {
+        title: "Build House in Maya and imported it into Unity",
+        description: "Mapped out a typical user’s day to identify key interactions and emotional touchpoints, ensuring the design addressed real-world use cases.",
+        image: "/Portfolio/assets/process/3DE_House.png"
+      },
+      {
+        title: "Cloth Simulation",
+        description: "Implemented dynamic cloth physics in Unity URP to simulate realistic flag movement within the island scene. Used Unity’s cloth system to achieve natural wind-driven animation, enhancing immersion and environmental storytelling.",
+        image: "/Portfolio/assets/process/3DE_Cloth.png"
+      },
+      {
+        title: "Waterfall VFX Integration",
+        description: "Designed and integrated a waterfall diorama using Shader Graph and particle systems. Focused on water flow, mist, and ripple effects to create a visually compelling and interactive environment for the 3rd person character.",
+        image: "/Portfolio/assets/process/3DE_Waterfall.png"
+      },
+      {
+        title: "Design Ocean and Water Effects",
+        description: "Implemented Shader Graph for realistic shoreline and water dynamics.",
+        image: "/Portfolio/assets/process/3DE_Ocean.png"
+      },
+      {
+        title: "Texture and Lighting Optimization",
+        description: "Applied baked lightmaps and texture maps for performance and atmosphere.",
+        image: "/Portfolio/assets/process/3DE_Lighting.png"
+      },  
+    ],
+    challenges: [
+      {
+        problem: "Creating and refining the hero tree asset was difficult, as adjusting branch and leaf counts caused Unity to hang or freeze during editing.",
+        solution: "Solved by seeking peer advice, researching optimization techniques on YouTube, and leveraging AI tools to streamline asset adjustments."
+      },
+      {
+        problem: "Designing realistic ocean water effects proved challenging, especially achieving convincing movement, foam, and reflections.",
+        solution: "Improved results by experimenting with Shader Graph, consulting friends for feedback, and studying tutorials to refine the water shader."
+      }
+    ],
+
+
+    tags: [
+      {
+        id: 1,
+        name: "Unity",
+        path: "/Portfolio/assets/logos/unity.svg",
+      },
+      {
+        id: 2,
+        name: "Maya",
+        path: "/Portfolio/assets/logos/maya.svg",
+      },
+      {
+        id: 3,
+        name: "Substance Painter",
+        path: "/Portfolio/assets/logos/substance-painter.svg",
+      },
+    ],
+  },  
+  {
+    id: 9,
+    title: "Pic-It-Up",
+    description:
+      "An interactive photobooth kiosk designed for the ICT campus, blending playful creativity with professional photo-taking needs. It offers LinkedIn headshots, meme generation, and event-themed photo modes in one seamless experience.",
+    subDescription: [
+      "Designed three distinct modes — LinkedIn Profile Photo, ICT Meme Generator, and Event Mode ",
+      "Refined kiosk ergonomics with privacy curtains, ring lighting, and branding aligned to ICT’s identity.",
+      "Integrated QR code downloads and cashless payment for flexible digital and physical photo outputs.",
+    ],
+    image: "/Portfolio/assets/projects/PicItUp.png",
+    media: {
+      figma: "https://www.figma.com/design/xk3p6xOjWlsKsiOyvxzigd/EXD?node-id=0-1&t=olwaP22fViSWEH0p-1",
+      youtube: "https://www.youtube.com/embed/Z46cbWwGitI"
+    },
+
+    processSteps: [
+      {
+        title: "Kiosk Visuals",
+        description: "Presented the final kiosk renderings from multiple angles to highlight branding, ergonomics, and ICT identity.",
+        image: "/Portfolio/assets/process/PIU_Kiosk.png"
+      },
+      {
+        title: "Kiosk Components",
+        description: "Outlined technical components and measurements to demonstrate usability and portability.",
+        image: "/Portfolio/assets/process/PIU_Components.png"
+      },
+      {
+        title: "LinkedIn Profile Photo Mode",
+        description: "Designed a professional mode for students to capture polished headshots with selectable backgrounds.",
+        image: "/Portfolio/assets/process/PIU_LinkedIn.png"
+      },
+      {
+        title: "ICT Meme Generator Mode",
+        description: "Created a playful mode where users generate memes from selfies with AI-suggested captions",
+        image: "/Portfolio/assets/process/PIU_Meme.png"
+      },
+      {
+        title: "Event Mode",
+        description: "Developed themed photo frames for campus events like RED Camp and Open House.",
+        image: "/Portfolio/assets/process/PIU_Event.png"
+      },
+      {
+        title: "Budget Breakdown",
+        description: "Compiled estimated costs to ensure feasibility within the $8,000 budget cap.",
+        image: "/Portfolio/assets/process/PIU_Budget.png"
+      },  
+    ],
+    challenges: [
+      {
+        problem: "Breaking down the project budget while staying within limits was challenging, especially balancing hardware quality with cost constraints.",
+        solution: "Reached out to kiosk vendors for rough quotations, compared component prices, and adjusted non-essential items to keep the total under $8,000."
+      },
+      {
+        problem: "Modeling the kiosk structure required careful iteration to balance privacy, accessibility, and aesthetics.",
+        solution: "Refined the design by repositioning curtains, integrating a C-shaped rod, and adding lighting systems to improve usability for both professional and casual photo-taking."
+      }
+    ],
+
+
+    tags: [
+      {
+        id: 1,
+        name: "Maya",
+        path: "/Portfolio/assets/logos/maya.svg",
+      },
+      {
+        id: 2,
+        name: "Figma",
+        path: "/Portfolio/assets/logos/figma.svg",
+      },
+    ],
+  },
   ];
 
 export const myIntegratedProjects = [
@@ -515,7 +661,11 @@ export const myIntegratedProjects = [
     image: "/Portfolio/assets/IP/1.2.png",
     href: "",
     tags: [
-      { id: 1, name: "Firebase", path: "/Portfolio/assets/logos/firebase.svg" },
+      { 
+        id: 1, 
+        name: "Firebase", 
+        path: "/Portfolio/assets/logos/firebase.svg"
+       },
       {
         id: 2,
         name: "Jira",
@@ -542,46 +692,47 @@ export const myIntegratedProjects = [
     ],
     media: {
       youtube: "https://youtu.be/MmTF9HlZcJc?si=HA8hhY49zUJDdmXT",
-      repository: "https://github.com/minnieie/MiaoMiao"
+      repository: "https://github.com/minnieie/MiaoMiao",
+      figma: "https://www.figma.com/design/OhDusRT3Cdo9KcR7XoiRJj/AD_MiaoMiao_Prototype?node-id=3-2&t=zopAzcDSro3TGdi6-1"
     },
-processSteps: [
-  {
-    title: "Research & Project Vision",
-    description: "Began by identifying target user demographics, specifically figurine collectors, and explored trends in gamified e-commerce and niche communities. Set the design vision around playful interaction, personalization, and community engagement inspired by collector culture.",
-    image: "/Portfolio/assets/process/IP_1.2_GC.png"
-  },
-  {
-    title: "Firebase Architecture & Backend Dev",
-    description: "Built and structured the backend using Firebase for authentication, user profiles, point tracking, and wishlist logic. Developed JSON schemas to enable dynamic data display across product listings and checkout flows.",
-    image: "/Portfolio/assets/process/IP_1.2_Firebase.png"
-  },
-  {
-    title: "3D Asset Integration",
-    description: "Made a Hello Kitty and SkullPanda 3D model in Maya and Substance Painter, then integrated them into the Sketchfab.",
-    image: "/Portfolio/assets/process/IP_1.2_3D.png"
-  },
-  {
-    title: "Wireframing to High-Fidelity Prototypes",
-    description: "Contributed on low-fidelity wireframes that mapped out the shopping journey—from browsing to post-purchase engagement. Refined the UI with soft colors, bold CTAs, and intuitive gestures suited for both desktop and mobile devices.",
-    image: "/Portfolio/assets/process/IP_1.2_Wireframe.png"
-  },
-  {
-    title: "Sprint Management & Iteration",
-    description: "Used Jira and SCRUM methodologies to manage agile sprints. Broke down backlog items, tracked velocity, and ran retrospectives to improve handoff efficiency between design, development, and QA.",
-    image: "/Portfolio/assets/process/IP_1.2_Sprints.png"
-  }
-],
-challenges: [
+    processSteps: [
+      {
+        title: "Research & Project Vision",
+        description: "Began by identifying target user demographics, specifically figurine collectors, and explored trends in gamified e-commerce and niche communities. Set the design vision around playful interaction, personalization, and community engagement inspired by collector culture.",
+        image: "/Portfolio/assets/process/IP_1.2_GC.png"
+      },
+      {
+        title: "Firebase Architecture & Backend Dev",
+        description: "Built and structured the backend using Firebase for authentication, user profiles, point tracking, and wishlist logic. Developed JSON schemas to enable dynamic data display across product listings and checkout flows.",
+        image: "/Portfolio/assets/process/IP_1.2_Firebase.png"
+      },
+      {
+        title: "3D Asset Integration",
+        description: "Made a Hello Kitty and SkullPanda 3D model in Maya and Substance Painter, then integrated them into the Sketchfab.",
+        image: "/Portfolio/assets/process/IP_1.2_3D.png"
+      },
+      {
+        title: "Wireframing to High-Fidelity Prototypes",
+        description: "Contributed on low-fidelity wireframes that mapped out the shopping journey—from browsing to post-purchase engagement. Refined the UI with soft colors, bold CTAs, and intuitive gestures suited for both desktop and mobile devices.",
+        image: "/Portfolio/assets/process/IP_1.2_Wireframe.png"
+      },
+      {
+        title: "Sprint Management & Iteration",
+        description: "Used Jira and SCRUM methodologies to manage agile sprints. Broke down backlog items, tracked velocity, and ran retrospectives to improve handoff efficiency between design, development, and QA.",
+        image: "/Portfolio/assets/process/IP_1.2_Sprints.png"
+      }
+    ],
+    challenges: [
 
-  {
-    problem: "Designing gamification that genuinely benefits collector engagement instead of being gimmicky.",
-    solution: "Introduced meaningful reward systems (e.g. login streaks, collector badges, discount tiers) that tie directly to user behavior and collection habits."
-  },
-  {
-    problem: "Unifying multiple modules (AD, GC, PMT, ID, 3DF) into a cohesive brand story.",
-    solution: "Connected the dots across design rationale, backend logic, and 3D design through a unified brand tone—centered on a welcoming, collector-first ethos exemplified by the cat-faced Miao Miao mascot."
-  }
-]
+      {
+        problem: "Designing gamification that genuinely benefits collector engagement instead of being gimmicky.",
+        solution: "Introduced meaningful reward systems (e.g. login streaks, collector badges, discount tiers) that tie directly to user behavior and collection habits."
+      },
+      {
+        problem: "Unifying multiple modules (AD, GC, PMT, ID, 3DF) into a cohesive brand story.",
+        solution: "Connected the dots across design rationale, backend logic, and 3D design through a unified brand tone—centered on a welcoming, collector-first ethos exemplified by the cat-faced Miao Miao mascot."
+      }
+    ]
   },
   {
     id: 2,
@@ -609,62 +760,285 @@ challenges: [
     ],
     media: {
       youtube: "https://youtu.be/D-WosQIL1rY?si=NgNHMPsucAmTPYZS",
-      repository: "https://github.com/minnieie/CrimeLens"
+      repository: "https://github.com/minnieie/CrimeLens",
+      figma: " https://www.figma.com/design/4Pl1yWpOAzIfSw9sazK5tk/DUX_CrimeLens_Prototype?node-id=0-1&t=XPokwOYdx8LUfNoH-1"
     },
-processSteps: [
-  {
-    title: "Gameplay Flow",
-    description: "We first mapped out the gameplay flow to visualize key tasks, interactions, and progression paths for players.",
-    image: "/Portfolio/assets/process/IP_2.1_Flow.png"
-  },
-  {
-    title: "Whitebox & Level Blocking",
-    description: "We built a whitebox prototype to test core gameplay mechanics and layout flow, using basic shapes to block out key areas and player paths.",
-    image: "/Portfolio/assets/process/IP_2.1_Whitebox.png"
-  },
-  {
-    title: "3D Asset Research",
-    description: "We compiled a PureRef board to guide our asset creation, with each team member assigned specific elements. I focused on designing the lights, walls, and doors to match the overall visual style.",
-    image: "/Portfolio/assets/process/IP_2.1_pureref.png"
-  },
-  {
-    title: "3D Asset Implementation",
-    description: "We organized all our 3D assets in one scene for easy access and placement, streamlining the process of building and testing the level.",
-    image: "/Portfolio/assets/process/IP_2.1_assets.png"
-  },
-  {
-    title: "Character Animations",
-    description: "I used Mixamo to assign different animations to each character, customizing their movements to fit various gameplay roles and interactions.",
-    image: "/Portfolio/assets/process/IP_2.1_Animations.png"
-  },
-  {
-    title: "Game Mechanics & Scripting",
-    description: "We programmed different computers to trigger unique activities when interacted with—like identifying AI-generated videos, solving CAPTCHA puzzles, and spotting fake emails.",
-    image: "/Portfolio/assets/process/IP_2.1_features.png"
-  },
-  {
-    title: "Wireframing to High-Fidelity Prototypes",
-    description: "We designed a scam-awareness kiosk in Figma for use in schools and community centres, featuring interactive activities like quizzes and media analysis. Players who answer correctly earn points, climb the leaderboard, and stand a chance to win vouchers—encouraging continued engagement and learning. Key features from the kiosk were also integrated into our game to reinforce these mechanics.",
-    image: "/Portfolio/assets/process/IP_2.1_Wireframe.png"
-  },
-  {
-    title: "Gameplay Loop",
-    description: "Our gameplay loop encourages repeat engagement by rewarding users for completing tasks and answering correctly. The chance to win vouchers and climb the leaderboard keeps players coming back.",
-    image: "/Portfolio/assets/process/IP_2.1_Loop.png"
-  },
-],
-challenges: [
+    processSteps: [
+      {
+        title: "Gameplay Flow",
+        description: "We first mapped out the gameplay flow to visualize key tasks, interactions, and progression paths for players.",
+        image: "/Portfolio/assets/process/IP_2.1_Flow.png"
+      },
+      {
+        title: "Whitebox & Level Blocking",
+        description: "We built a whitebox prototype to test core gameplay mechanics and layout flow, using basic shapes to block out key areas and player paths.",
+        image: "/Portfolio/assets/process/IP_2.1_Whitebox.png"
+      },
+      {
+        title: "3D Asset Research",
+        description: "We compiled a PureRef board to guide our asset creation, with each team member assigned specific elements. I focused on designing the lights, walls, and doors to match the overall visual style.",
+        image: "/Portfolio/assets/process/IP_2.1_pureref.png"
+      },
+      {
+        title: "3D Asset Implementation",
+        description: "We organized all our 3D assets in one scene for easy access and placement, streamlining the process of building and testing the level.",
+        image: "/Portfolio/assets/process/IP_2.1_assets.png"
+      },
+      {
+        title: "Character Animations",
+        description: "I used Mixamo to assign different animations to each character, customizing their movements to fit various gameplay roles and interactions.",
+        image: "/Portfolio/assets/process/IP_2.1_Animations.png"
+      },
+      {
+        title: "Game Mechanics & Scripting",
+        description: "We programmed different computers to trigger unique activities when interacted with—like identifying AI-generated videos, solving CAPTCHA puzzles, and spotting fake emails.",
+        image: "/Portfolio/assets/process/IP_2.1_features.png"
+      },
+      {
+        title: "Wireframing to High-Fidelity Prototypes",
+        description: "We designed a scam-awareness kiosk in Figma for use in schools and community centres, featuring interactive activities like quizzes and media analysis. Players who answer correctly earn points, climb the leaderboard, and stand a chance to win vouchers—encouraging continued engagement and learning. Key features from the kiosk were also integrated into our game to reinforce these mechanics.",
+        image: "/Portfolio/assets/process/IP_2.1_Wireframe.png"
+      },
+      {
+        title: "Gameplay Loop",
+        description: "Our gameplay loop encourages repeat engagement by rewarding users for completing tasks and answering correctly. The chance to win vouchers and climb the leaderboard keeps players coming back.",
+        image: "/Portfolio/assets/process/IP_2.1_Loop.png"
+      },
+    ],
+    challenges: [
 
-  {
-    problem: "Coordinating team schedules for daily sprints during the integrated project.",
-    solution: "Maintained constant communication and flexibility to find common working hours and keep progress steady."
+      {
+        problem: "Coordinating team schedules for daily sprints during the integrated project.",
+        solution: "Maintained constant communication and flexibility to find common working hours and keep progress steady."
+      },
+      {
+        problem: "Learning how to implement video playback in Unity with no prior experience.",
+        solution: "Researched online tutorials and experimented with Unity’s video player tools to successfully integrate video content."
+      }
+    ] 
+  },
+    {
+    id: 3,
+    title: "Toast & Tales",
+    description: "Toast & Tales is an educational Augmented Reality (AR) mobile game designed to rejuvenate interest in the heritage of Singapore's iconic Ya Kun Kaya Toast. By leveraging AR technology to bring static images to life, the application allows players to interact directly with virtual history rather than just reading about it.",
+    subDescription: [
+      "Modules: Immersive Technology Development, Developing Dynamic Applications",
+    ],
+    image: "/Portfolio/assets/IP/ToastAndTales.png",
+    href: "",
+    tags: [
+      { 
+        id: 1, 
+        name: "Firebase", 
+        path: "/Portfolio/assets/logos/firebase.svg"
+       },
+      {
+        id: 2,
+        name: "HTML",
+        path: "/Portfolio/assets/logos/html5.svg",
+      },
+      {
+        id: 3,
+        name: "CSS",
+        path: "/Portfolio/assets/logos/css.svg",
+      },
+      {
+        id: 4,
+        name: "JavaScript",
+        path: "/Portfolio/assets/logos/javascript.svg",
+      },
+      {
+        id: 5,
+        name: "Unity",
+        path: "/Portfolio/assets/logos/unity.svg",
+      },
+    ],
+    media: {
+      youtube: "https://youtu.be/BCx4ieixDUA",
+      repository: "https://github.com/minnieie/ToastAndTales",
+      website: "https://toastandtales.web.app"
+    },
+    processSteps: [
+      {
+        title: "Wireframing Login & Sign Up ",
+        description: "Mapped out the user journey for account creation and access.",
+        image: "/Portfolio/assets/process/TNT_Wireframe.png"
+      },
+      {
+        title: "Authentication Flow",
+        description: "Implemented secure login and sign-up with validation.",
+        image: "/Portfolio/assets/process/TNT_Auth.png"
+      },
+      {
+        title: "Firebase Data Structure",
+        description: "Designed and implemented the Firebase database schema to support user data, progress tracking, and achievement systems.",
+        image: "/Portfolio/assets/process/TNT_Firebase.png"
+      },
+      {
+        title: "Core Gameplay Development",
+        description: "Designed interactive AR mechanics for heritage storytelling.",
+        image: "/Portfolio/assets/process/TNT_Gameplay.png"
+      },
+      {
+        title: "AR Face Filter",
+        description: "Integrated playful AR filters to enhance engagement.",
+        image: "/Portfolio/assets/process/TNT_Face.png"
+      },
+      {
+        title: "Achievement System",
+        description: "Created progression tracking with unlockable heritage badges in the website",
+        image: "/Portfolio/assets/process/TNT_Achievement.png"
+      },
+    ],
+    challenges: [
+
+      {
+        problem: "Deploying the Unity project into a mobile APK was complex, especially ensuring consistent package naming and build settings.",
+        solution: "Resolved by carefully aligning Unity package identifiers, testing multiple build iterations, and consulting documentation and peers to achieve a stable deployment."
+      },
+      {
+        problem: "Developing core gameplay interactions was tricky — objects needed to be grabable, draggable, and responsive to image recognition triggers.",
+        solution: "Implemented Unity physics and interaction scripts, added event‑based pop‑ups, and refined mechanics through trial, peer feedback, and online tutorials."
+      }
+    ]
   },
   {
-    problem: "Learning how to implement video playback in Unity with no prior experience.",
-    solution: "Researched online tutorials and experimented with Unity’s video player tools to successfully integrate video content."
-  }
-]
+    id: 4,
+    title: "Rocks & Deepspace",
+    description: "Rocks & Deepspace is an educational VR game where secondary school students control a Mars rover to eplore, scan and analyse rocks while learning planetary science through hands  on gameplay. The objective of the game is to look out of rocks and minerals to see if Mars is a habitable planet, and send the report back to Earth. The game combines immersive 3D environments, interactive mechanics, and educational content to make learning about Mars geology engaging and memorable.",
+    subDescription: [
+      "Modules: 3D Environment, Immersive Technology Development, Experiential Design, Developinig Dynamic Applications, Production Management"
+    ],
+    image: "/Portfolio/assets/IP/RocksAndDeepspace.png",
+    href: "",
+    tags: [
+      { 
+        id: 1, 
+        name: "Firebase", 
+        path: "/Portfolio/assets/logos/firebase.svg"
+       },
+      {
+        id: 2,
+        name: "Jira",
+        path: "/Portfolio/assets/logos/jira-5.png",
+      },
+      { id: 3, name: "Figma", path: "/Portfolio/assets/logos/figma.svg" },
+      { id: 4, name: "Maya", path: "/Portfolio/assets/logos/maya.svg" },
+      { id: 5, name: "Substance Painter", path: "/Portfolio/assets/logos/substance-painter.svg" },
+      {
+        id: 6,
+        name: "HTML",
+        path: "/Portfolio/assets/logos/html5.svg",
+      },
+      {
+        id: 7,
+        name: "CSS",
+        path: "/Portfolio/assets/logos/css.svg",
+      },
+      {
+        id: 8,
+        name: "JavaScript",
+        path: "/Portfolio/assets/logos/javascript.svg",
+      },
+      {
+        id: 9,
+        name: "Unity",
+        path: "/Portfolio/assets/logos/unity.svg",
+      },
+    ],
+    media: {
+      youtube: "https://youtu.be/NVLKzwUMOH4?si=Ea62tvCCSnkcNYyQ",
+      repository: "https://github.com/Bfejwind/4Fingers",
+      website: "https://nothing-b62c1.web.app/"
+    },
+    processSteps: [
+      {
+        title: "Plan Exploration Map",
+        description: "Started by sketching the terrain map to outline zones, hazards, and resource locations using figma, which helped us visualize the rover’s exploration path and key gameplay areas.",
+        image: "/Portfolio/assets/process/IP_2.2_Map.png"
+      },
+      {
+        title: "Compare Map In-Game",
+        description: "Translated planned map into Unity to match in-game terrain and validate exploration routes.",
+        image: "/Portfolio/assets/process/IP_2.2_Map2.png"
+      },
+      {
+        title: "User Sign-Up & Authentication",
+        description: "Built authentication and onboarding flow with Firebase to manage user accounts and track progress.",
+        image: "/Portfolio/assets/process/IP_2.2_SignUp.png"
+      },
+      {
+        title: "Tutorial",
+        description: "Upon logging in, players are guided through a tutorial that introduces core mechanics like rover movement, rock scanning, and data analysis.",
+        image: "/Portfolio/assets/process/IP_2.2_Tutorial.png"
+      },
+      {
+        title: "Scanning Rocks",
+        description: "Users can scan for mineable rocks within the area",
+        image: "/Portfolio/assets/process/IP_2.2_Scanner.png"
+      },
+      {
+        title: "Drilling Rocks",
+        description: "Users can drill into mineable rocks to extract resources.",
+        image: "/Portfolio/assets/process/IP_2.2_Drill.png"
+      },
+      {
+        title: "In-Game Achievements",
+        description: "Users can unlock achievements by completing specific tasks or milestones within the game.",
+        image: "/Portfolio/assets/process/IP_2.2_Achievement.png"
+      },
+      {
+        title: "Rock Display",
+        description: "Depending on how well users have done in the game, they can find out more about the rocks they have scanned and drill and come to understand more about the habitability of Mars.",
+        image: "/Portfolio/assets/process/IP_2.2_RockDisplay.png"
+      },
+      {
+        title: "Repairing the Rover",
+        description: "As there are many hazards on Mars such as steam vents or dust storms, users will have to repair the rover when it gets damaged. This adds an extra layer of challenge and realism to the game.",
+        image: "/Portfolio/assets/process/IP_2.2_Repair.png"
+      },
+      {
+        title: "Interactive 3D Mars website",
+        description: "As users scroll through the website, a 3D model of Mars spins on the screen.",
+        image: "/Portfolio/assets/process/IP_2.2_Website.png"
+      },
+      {
+        title: "Website Authentication",
+        description: "Users can choose to create an account or log in to the website to track their progress and achievements in the game.",
+        image: "/Portfolio/assets/process/IP_2.2_Auth.png"
+      },
+      {
+        title: "Leaderboard",
+        description: "Users can view their ranking and compete with people on the leaderboard.",
+        image: "/Portfolio/assets/process/IP_2.2_Leaderboard.png"
+      },
+      {
+        title: "Profile Photo Customization",
+        description: "Users can choose from a variety of profile photos from their gallery or choose to take photo live to personalize their experience.",
+        image: "/Portfolio/assets/process/IP_2.2_PFP.png"
+      },
+      {
+        title: "Achievement Badges sync with Profile",
+        description: "Users can view their unlocked achievements and badges directly on their profile.",
+        image: "/Portfolio/assets/process/IP_2.2_Badge.png"
+      },
+      {
+        title: "Sprint Management & Iteration",
+        description: "Used Jira and SCRUM methodologies to manage agile sprints. Broke down backlog items, tracked velocity, and ran retrospectives to improve handoff efficiency between design, development, and QA.",
+        image: "/Portfolio/assets/process/IP_2.2_Sprints.png"
+      }
+    ],
+    challenges: [
 
+      {
+        problem: "Managing the sprint required constant coordination, as peers often needed reminders to stay on track.",
+        solution: "Took ownership of sprint leadership by running check-ins, sending reminders, and ensuring backlog items were completed on time."
+      },
+      {
+        problem: "Integrating Firebase so that in-game statistics (achievements, scores, progress) displayed correctly on the website was complex.",
+        solution: "Structured the database carefully, tested data flows between Unity and the web app, and debugged inconsistencies until achievements and leaderboard synced seamlessly."
+      }
+    ]
   },
 ];
 

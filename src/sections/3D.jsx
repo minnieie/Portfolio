@@ -21,6 +21,11 @@ const threeDProjects = [
     title: "R2D2",
     embedUrl: "https://sketchfab.com/models/263229ddbe474ccc91f74d689223e0c5/embed",
     note: "Model for Sci-Fi Corridor Project"
+  },
+  {
+    title: "Pic-It-Up Kiosk",
+    embedUrl: "https://sketchfab.com/models/7b1a5b13fa284d0b9ef39f3adc62930e/embed",
+    note: "Prototype for the School of Ngee Ann Polytechnic"
   }
 ];
 

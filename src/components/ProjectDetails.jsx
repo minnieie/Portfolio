@@ -111,26 +111,41 @@ const ProjectDetails = ({
                 ))}
               </div>
 
-              {/* Visit Link */}
-              {media?.figma ? (
-                <a
-                  href={media.figma}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-6 px-5 py-2 bg-purple-600 rounded-md hover:bg-purple-700 transition"
-                >
-                  View Prototype on Figma
-                </a>
-              ) : media?.repository ? (
-                <a
-                  href={media.repository}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block mt-6 px-5 py-2 bg-gray-800 rounded-md hover:bg-gray-700 transition"
-                >
-                  View Code on GitHub
-                </a>
-              ) : null}
+              {/* Visit Links */}
+              <div className="flex flex-wrap gap-4 mt-6">
+                {media?.figma && (
+                  <a
+                    href={media.figma}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2 bg-purple-600 rounded-md hover:bg-purple-700 transition"
+                  >
+                    View Prototype on Figma
+                  </a>
+                )}
+
+                {media?.repository && (
+                  <a
+                    href={media.repository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2 bg-gray-800 rounded-md hover:bg-gray-700 transition"
+                  >
+                    View Code on GitHub
+                  </a>
+                )}
+
+                {media?.website && (
+                  <a
+                    href={media.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-5 py-2 bg-blue-600 rounded-md hover:bg-blue-700 transition"
+                  >
+                    Visit Website
+                  </a>
+                )}
+              </div>
             </>
           )}
 
